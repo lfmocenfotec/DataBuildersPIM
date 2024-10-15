@@ -1,8 +1,6 @@
 cmake_minimum_required(VERSION 3.29)
-project(DataBuildersPIM)
+project(DataBuilders)
 
-set(CMAKE_CXX_STANDARD 14)
-add_executable(DataBuildersPIM main.cpp otros_archivos.cpp)
+set(CMAKE_CXX_STANDARD 20)
 
-add_executable(DataBuildersPIM
-    main.cpp)
+add_executable(DataBuilders main.cpp)
