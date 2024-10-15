@@ -4,14 +4,6 @@
 
 using namespace std;
 
-<<<<<<< HEAD
-
-
-void menuPrincipal() {
-    int option;
-    bool exit = false;
-=======
->>>>>>> main
 
 void menuBusqueda() {
     int opcion;
