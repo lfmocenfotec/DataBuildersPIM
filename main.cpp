@@ -1,52 +1,60 @@
-//
-// Created by NachoM on 14/10/2024.
-//
-
 #include <iostream>
 #include <string>
 #include <limits>
 
 using namespace std;
 
+void mensajeSalida() {
+    cout << "Saliendo del programae..." << endl;
+}
+
 void menuPrincipal() {
     int option;
     bool exit = false;
 
     while (!exit) {
-        cout << "===========================================" << endl;
-        cout << "Administrador de información de productos" << endl;
-        cout << "==========================================" << endl;
-        cout << "1. Administrar productos" << endl;
-        cout << "2. Administrar categorias" << endl;
-        cout << "3. Buscar y filtrar productos" << endl;
-        cout << "4. Salir" << endl;
-        cout << "=========================================" << endl;
-        cout << "Seleccione una opcion (1-4): ";
-        cin >> option;
+        try {
+            cout << "===========================================" << endl;
+            cout << "Administrador de información de productos" << endl;
+            cout << "==========================================" << endl;
+            cout << "1. Administrar productos" << endl;
+            cout << "2. Administrar categorias" << endl;
+            cout << "3. Buscar y filtrar productos" << endl;
+            cout << "4. Salir" << endl;
+            cout << "=========================================" << endl;
+            cout << "Seleccione una opcion (1-4): ";
+            cin >> option;
 
-        switch (option) {
-            case 1:
-                menuProducto();
-            break;
-            case 2:
-               menuCategoria();
-            break;
-            case 3:
-                menuBusqueda();
-            break;
-            case 4:
-                mensajeSalida();
-            exit = true;
-            break;
-            default:
-                cout << "Opcion invalida, intentelo de nuevo." << endl;
-            break;
+            if (cin.fail()) {
+                throw invalid_argument("Entrada inválida. Por favor, ingrese un número.");
+            }
+
+            switch (option) {
+                case 1:
+                    menuProducto();
+                    break;
+                case 2:
+                    menuCategoria();
+                    break;
+                case 3:
+                    menuBusqueda();
+                    break;
+                case 4:
+                    mensajeSalida();
+                    exit = true;
+                    break;
+                default:
+                    cout << "Opcion invalida, intentelo de nuevo." << endl;
+                    break;
+            }
+        } catch (const exception& e) {
+            cout << "Error: " << e.what() << endl;
+            // Limpia la entrada estándar si falla
+            cin.clear();
+            cin.ignore(10000, '\n');
         }
     }
-
-
 }
-
 
 void menuCategoria() {
     int option;
@@ -75,41 +83,35 @@ void menuCategoria() {
             switch (option) {
                 case 1:
                     agregarCategoria();
-
-                break;
+                    break;
                 case 2:
                     modificarCategoria();
-
-                break;
+                    break;
                 case 3:
                     eliminarCategoria();
-
-                break;
+                    break;
                 case 4:
                     consultarCategoria();
-
-                break;
+                    break;
                 case 5:
                     cout << "Volviendo al menú principal..." << endl;
-                exit = true;
-                break;
+                    exit = true;
+                    break;
                 case 6:
                     cout << "Saliendo del sistema..." << endl;
-                exit = true;
-                break;
+                    exit = true;
+                    break;
                 default:
                     cout << "Opción inválida, inténtelo de nuevo." << endl;
-                break;
+                    break;
             }
         } catch (const invalid_argument &e) {
             cout << e.what() << endl;
-            cin.clear();  // Limpia el error del flujo
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');  // Descarta el resto de la entrada
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
     }
 }
-
-
 
 void menuProducto() {
     int option;
@@ -132,13 +134,10 @@ void menuProducto() {
             break;
             case 4: consultarProcuto();
             break;
-            break;
             case 0:
                 std::cout << "Saliendo..." <<std::endl;
             break;
         }
     }
-        while (option !=0);
-
+    while (option != 0);
 }
-
