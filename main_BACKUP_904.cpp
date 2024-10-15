@@ -68,16 +68,16 @@ void menuCategoria() {
 
             switch (option) {
                 case 1:
-                   // agregarCategoria();
+                    agregarCategoria();
                     break;
                 case 2:
-                  //  modificarCategoria();
+                    modificarCategoria();
                     break;
                 case 3:
-                   // eliminarCategoria();
+                    eliminarCategoria();
                     break;
                 case 4:
-                   // consultarCategoria();
+                    consultarCategoria();
                     break;
                 case 5:
                     cout << "Volviendo al menú principal..." << endl;
@@ -112,13 +112,13 @@ void menuProducto() {
         std::cin >>option;
 
         switch (option) {
-            case 1: //agregarProducto();
+            case 1: agregarProducto();
             break;
-            case 2:// modificarProducto();
+            case 2: modificarProducto();
             break;
-            case 3:// eliminarProducto();
+            case 3: eliminarProducto();
             break;
-            case 4: //consultarProcuto();
+            case 4: consultarProcuto();
             break;
             case 0:
                 std::cout << "Saliendo..." <<std::endl;
