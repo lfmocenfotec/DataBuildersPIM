@@ -74,19 +74,19 @@ void menuCategoria() {
 
             switch (option) {
                 case 1:
-                    cout << "Crear categoría seleccionada." << endl;
+                    agregarCategoria();
 
                 break;
                 case 2:
-                    cout << "Modificar categoría seleccionada." << endl;
+                    modificarCategoria();
 
                 break;
                 case 3:
-                    cout << "Eliminar categoría seleccionada." << endl;
+                    eliminarCategoria();
 
                 break;
                 case 4:
-                    cout << "Consultar lista de categorías seleccionada." << endl;
+                    consultarCategoria();
 
                 break;
                 case 5:
