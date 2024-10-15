@@ -4,14 +4,7 @@
 
 using namespace std;
 
-<<<<<<< HEAD
 
-
-void menuPrincipal() {
-    int option;
-    bool exit = false;
-=======
->>>>>>> main
 
 void menuBusqueda() {
     int opcion;
@@ -173,4 +166,8 @@ void menuPrincipal() {
             cin.ignore(10000, '\n');
         }
     }
+}
+int main() {
+    menuPrincipal();
+    return 0;
 }
