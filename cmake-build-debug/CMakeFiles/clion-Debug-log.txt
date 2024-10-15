@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefiles" -S C:\Users\guill\Documents\DataBuildersPIM -B C:\Users\guill\Documents\DataBuildersPIM\cmake-build-debug
+"C:\Program Files\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefiles" -S C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM -B C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\cmake-build-debug
 -- The C compiler identification is GNU 13.1.0
 -- The CXX compiler identification is GNU 13.1.0
 -- Detecting C compiler ABI info
@@ -11,6 +11,12 @@
 -- Check for working CXX compiler: C:/Program Files/JetBrains/CLion 2024.2.1/bin/mingw/bin/g++.exe - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
--- Configuring done (3.9s)
--- Generating done (0.0s)
--- Build files have been written to: C:/Users/guill/Documents/DataBuildersPIM/cmake-build-debug
+CMake Error at CMakeLists.txt:7 (add_executable):
+  add_executable cannot create target "DataBuildersPIM" because another
+  target with the same name already exists.  The existing target is an
+  executable created in source directory
+  "C:/Users/jocel/OneDrive/Documentos/DataBuildersPIM".  See documentation
+  for policy CMP0002 for more details.
+
+
+-- Configuring incomplete, errors occurred!
