@@ -43,7 +43,7 @@ void menuPrincipal() {
             break;
         }
     }
-<<<<<<< HEAD
+
 
 }
 
@@ -108,8 +108,8 @@ void menuCategoria() {
         }
     }
 }
-=======
-}
+
+
 
 void menuProducto() {
     int option;
@@ -141,4 +141,4 @@ void menuProducto() {
         while (option !=0);
 
 }
->>>>>>> origin/Laura
+
