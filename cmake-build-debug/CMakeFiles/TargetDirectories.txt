@@ -1,3 +1,0 @@
-C:/Users/jocel/OneDrive/Documentos/DataBuildersPIM/cmake-build-debug/CMakeFiles/DataBuilders.dir
-C:/Users/jocel/OneDrive/Documentos/DataBuildersPIM/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/jocel/OneDrive/Documentos/DataBuildersPIM/cmake-build-debug/CMakeFiles/rebuild_cache.dir
