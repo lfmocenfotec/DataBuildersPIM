@@ -43,6 +43,7 @@ void menuPrincipal() {
             break;
         }
     }
+<<<<<<< HEAD
 
 }
 
@@ -107,3 +108,37 @@ void menuCategoria() {
         }
     }
 }
+=======
+}
+
+void menuProducto() {
+    int option;
+
+    do {
+        std::cout << "\nMenu Producto" <<std::endl;
+        std::cout << "\n1. Agregar nuevos productos" <<std::endl;
+        std::cout << "2: Modificar productos existentes" <<std::endl;
+        std::cout << "3: Eliminar productos" <<std::endl;
+        std::cout << "4: Consultar productos" <<std::endl;
+        std::cout << "0: Volver al menu principal" <<std::endl;
+        std::cin >>option;
+
+        switch (option) {
+            case 1: agregarProducto();
+            break;
+            case 2: modificarProducto();
+            break;
+            case 3: eliminarProducto();
+            break;
+            case 4: consultarProcuto();
+            break;
+            break;
+            case 0:
+                std::cout << "Saliendo..." <<std::endl;
+            break;
+        }
+    }
+        while (option !=0);
+
+}
+>>>>>>> origin/Laura
