@@ -8,6 +8,28 @@
 
 using namespace std;
 
+void menuBusqueda() {
+    int opcion;
+    cout << "=== Menú de búsqueda y filtrado ===" << endl;
+    cout << "1. Buscar producto por nombre" << endl;
+    cout << "2. Filtrar producto por nombre" << endl;
+    cout << "Seleccione una opcion" << endl;
+    cin >> opcion;
+    cin.ignore();
+
+    if (opcion == 1) {
+        string nombre;
+        cout<< "Ingrese el nombre del producto";
+        getline(cin, nombre);
+    }else if (opcion == 2) {
+        string categoria;
+        cout << "ingrese la categoria: ";
+        getline(cin, categoria);
+    }else {
+        cout << "Opcion invalida, intentelo de nuevo." << endl;
+    }
+}
+
 void menuPrincipal() {
     int option;
     bool exit = false;
