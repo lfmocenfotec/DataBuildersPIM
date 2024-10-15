@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/jocel/OneDrive/Documentos/DataBuildersPIM/cmake-build-debug"
+			"value" : "c:/Users/guill/Documents/DataBuildersPIM/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -559,7 +559,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/jocel/OneDrive/Documentos/DataBuildersPIM/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/guill/Documents/DataBuildersPIM/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -631,7 +631,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/jocel/OneDrive/Documentos/DataBuildersPIM"
+			"value" : "C:/Users/guill/Documents/DataBuildersPIM"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1267,7 +1267,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/jocel/OneDrive/Documentos/DataBuildersPIM/cmake-build-debug"
+			"value" : "C:/Users/guill/Documents/DataBuildersPIM/cmake-build-debug"
 		},
 		{
 			"name" : "DataBuildersPIM_IS_TOP_LEVEL",
@@ -1291,7 +1291,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/jocel/OneDrive/Documentos/DataBuildersPIM"
+			"value" : "C:/Users/guill/Documents/DataBuildersPIM"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
