@@ -3,8 +3,11 @@
 #include <limits>
 
 using namespace std;
-
-
+#include "Producto.h"
+#include <vector>
+#include <iostream>
+#include <string>
+std::vector<Producto> productos; // Vector para almacenar productos
 
 void menuBusqueda() {
     int opcion;
@@ -105,13 +108,25 @@ void menuProducto() {
         std::cin >>option;
 
         switch (option) {
-            case 1: //agregarProducto();
+            case 1: Producto nuevoProducto(0, "Nombre", "Categoria", 0.0, 0);
+            nuevoProducto.agregarProducto(); // Llama al método
             break;
-            case 2:// modificarProducto();
             break;
-            case 3:// eliminarProducto();
+            case 2: // Llamar al método modificarProducto
+                if (!productos.empty()) {
+                    productos[0].modificarProducto(0); // Llama al método para modificar el primer producto
+                }
             break;
-            case 4: //consultarProcuto();
+            case 3: // Llamar al método eliminarProducto
+                if (!productos.empty()) {
+                    productos[0].eliminarProducto(0); // Llama al método para eliminar el primer producto
+                    productos.erase(productos.begin()); // Elimina el primer producto del vector
+                }
+            break;
+            case 4:   // Llamar al método consultarProducto
+                if (!productos.empty()) {
+                    productos[0].consultarProducto(); // Llama al método para consultar el primer producto
+                }
             break;
             case 0:
                 std::cout << "Saliendo..." <<std::endl;

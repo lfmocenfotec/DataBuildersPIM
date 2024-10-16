@@ -6,4 +6,6 @@ set(CMAKE_CXX_STANDARD 14)
 # Establecer que se trata de una aplicación de consola
 set(CMAKE_WIN32_EXECUTABLE OFF)
 
-add_executable(DataBuildersPIM main.cpp)  # Agrega otros archivos si es necesario
+add_executable(DataBuildersPIM main.cpp
+        Producto.h
+        Producto.cpp)  # Agrega otros archivos si es necesario
