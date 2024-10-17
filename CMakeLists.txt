@@ -3,11 +3,16 @@ project(DataBuildersPIM)
 
 set(CMAKE_CXX_STANDARD 14)
 
+<<<<<<< HEAD
 
+=======
+# Añadir todos los archivos fuente al ejecutable
+>>>>>>> origin/main
 add_executable(DataBuildersPIM
-    main.cpp
+        main.cpp
         Categoria.cpp
         Categoria.h
+<<<<<<< HEAD
         Categoria.h
         Categoria.h
         Categoria.h)
@@ -23,3 +28,10 @@ add_executable(DataBuildersPIM main.cpp
         Categoria.h
         Categoria.h)  # Agrega otros archivos si es necesario
 
+=======
+        Producto.cpp
+        Producto.h)  # Agrega otros archivos si es necesario
+
+# Establecer que se trata de una aplicación de consola
+set(CMAKE_WIN32_EXECUTABLE OFF)
+>>>>>>> origin/main
