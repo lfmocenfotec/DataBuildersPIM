@@ -2,12 +2,15 @@
 #include <string>
 #include <limits>
 
+#include "Categoria.h"
+
 using namespace std;
 #include "Producto.h"
 #include <vector>
 #include <iostream>
 #include <string>
 std::vector<Producto> productos; // Vector para almacenar productos
+std::vector<Categoria> categorias; // Vector para almacenar categorias
 
 void menuBusqueda() {
     int opcion;
@@ -55,6 +58,8 @@ void menuCategoria() {
         cout << "=========================================" << endl;
         cout << "Seleccione una opción (1-6): ";
 
+        Categoria nuevaCategoria("Nombre"); // Declaración del objeto
+
         try {
             cin >> option;
 
@@ -63,24 +68,27 @@ void menuCategoria() {
             }
 
             switch (option) {
-                case 1:
-                   // agregarCategoria();
+                case 1: // Llamar al metodo agregar categoria
+                    nuevaCategoria.agregarCategoria();
                     break;
-                case 2:
-                  //  modificarCategoria();
+                case 2: // Llama al metodo modificar categoria
+                    if (!categorias.empty()) {
+                        categorias[0].modificarCategoria();
+                    }
                     break;
-                case 3:
-                   // eliminarCategoria();
+                case 3: // Llama al metodo eliminar categoria
+                    if (!productos.empty()) {
+                        categorias[0].eliminarCategoria();
+                        categorias.erase(categorias.begin()); // Elimina el primer producto del vector
+                    }
                     break;
-                case 4:
-                   // consultarCategoria();
+                case 4: // Llama al metodo visualuzar categoria
+                    if (!categorias.empty()) {
+                        categorias[0].visualizarCategoria();
+                    }
                     break;
                 case 5:
                     cout << "Volviendo al menú principal..." << endl;
-                    exit = true;
-                    break;
-                case 6:
-                    cout << "Saliendo del sistema..." << endl;
                     exit = true;
                     break;
                 default:

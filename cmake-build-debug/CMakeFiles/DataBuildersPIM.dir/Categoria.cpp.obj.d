@@ -1,6 +1,6 @@
 CMakeFiles/DataBuildersPIM.dir/Categoria.cpp.obj: \
- C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\Categoria.cpp \
- C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\Categoria.h \
+ C:\Users\XSF\Documents\CENFOTEC\Proyecto\ de\ Ing\ del\ Software\ 1\DataBuildersPIM\Categoria.cpp \
+ C:\Users\XSF\Documents\CENFOTEC\Proyecto\ de\ Ing\ del\ Software\ 1\DataBuildersPIM\Categoria.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
