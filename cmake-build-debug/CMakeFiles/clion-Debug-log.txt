@@ -1,3 +1,13 @@
+<<<<<<< HEAD
 "C:\Program Files\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefiles" -S "C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM" -B "C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM\cmake-build-debug"
 CMake Error: The current CMakeCache.txt directory C:/Users/XSF/Documents/CENFOTEC/Proyecto de Ing del Software 1/DataBuildersPIM/cmake-build-debug/CMakeCache.txt is different than the directory c:/Users/jocel/OneDrive/Documentos/DataBuildersPIM/cmake-build-debug where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
 CMake Error: The source "C:/Users/XSF/Documents/CENFOTEC/Proyecto de Ing del Software 1/DataBuildersPIM/CMakeLists.txt" does not match the source "C:/Users/jocel/OneDrive/Documentos/DataBuildersPIM/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.
+=======
+"C:\Program Files\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefiles" -S C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM -B C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\cmake-build-debug
+CMake Error at CMakeLists.txt:6:
+  Parse error.  Expected a command name, got unquoted argument with text
+  "<<<<<<<".
+
+
+-- Configuring incomplete, errors occurred!
+>>>>>>> 9c2f72126bcffe03302306da1f87ea4e39c19c97
