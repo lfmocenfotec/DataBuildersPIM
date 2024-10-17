@@ -8,7 +8,7 @@ using namespace std;
 #include <iostream>
 #include <string>
 std::vector<Producto> productos; // Vector para almacenar productos
-
+//Douglas Manases
 void menuBusqueda() {
     int opcion;
     cout << "=== Menú de búsqueda y filtrado ===" << endl;
@@ -30,14 +30,14 @@ void menuBusqueda() {
         cout << "Opcion invalida, intentelo de nuevo." << endl;
     }
 }
-
+// Guillermo Alfaro C.
 void mensajeSalida() {
     cout << "Saliendo del programae..." << endl;
 
 }
 
 
-
+//Jocelyn Miranda H.
 void menuCategoria() {
     int option;
     bool exit = false;
@@ -94,7 +94,7 @@ void menuCategoria() {
         }
     }
 }
-
+//Laura Fernanda Monge
 void menuProducto() {
     int option;
 
@@ -138,6 +138,8 @@ void menuProducto() {
         }
     } while (option != 0);
 }
+
+//Ignacio Molina A.
 void menuPrincipal() {
     int option;
     bool exit = false;

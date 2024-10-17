@@ -1,7 +1,7 @@
 //
 // Created by XSF on 10/16/2024.
 //
-
+//Laura Fernanda Monge
 #ifndef CATEGORIA_H
 #define CATEGORIA_H
 #include <string>

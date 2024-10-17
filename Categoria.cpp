@@ -1,7 +1,7 @@
 //
 // Created by XSF on 10/16/2024.
 //
-
+// //Laura Fernanda Monge
 #include "Categoria.h"
 
 #include <iostream>

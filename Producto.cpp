@@ -1,6 +1,6 @@
 //
 // Created by jocel on 16/10/2024.
-
+//Jocelyn Miranda H
 
 #include "Producto.h"
 

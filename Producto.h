@@ -1,7 +1,7 @@
 //
 // Created by jocel on 16/10/2024.
 //
-
+//Jocelyn Miranda H.
 #ifndef PRODUCTO_H
 #define PRODUCTO_H
 #include <string>
