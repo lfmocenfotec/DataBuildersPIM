@@ -10,12 +10,12 @@ using namespace std;
 #include <iostream>
 #include <string>
 std::vector<Producto> productos; // Vector para almacenar productos
-<<<<<<< HEAD
+
 //Douglas Manases
-=======
+
 std::vector<Categoria> categorias; // Vector para almacenar categorias
 
->>>>>>> origin/Laura
+
 void menuBusqueda() {
     int opcion;
     cout << "=== Menú de búsqueda y filtrado ===" << endl;

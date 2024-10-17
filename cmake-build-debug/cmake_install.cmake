@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/XSF/Documents/CENFOTEC/Proyecto de Ing del Software 1/DataBuildersPIM
+# Install script for directory: C:/Users/jocel/OneDrive/Documentos/DataBuildersPIM
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/XSF/Documents/CENFOTEC/Proyecto de Ing del Software 1/DataBuildersPIM/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/jocel/OneDrive/Documentos/DataBuildersPIM/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
