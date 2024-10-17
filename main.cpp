@@ -99,18 +99,19 @@ void menuProducto() {
     int option;
 
     do {
-        std::cout << "\nMenu Producto" <<std::endl;
-        std::cout << "\n1. Agregar nuevos productos" <<std::endl;
-        std::cout << "2: Modificar productos existentes" <<std::endl;
-        std::cout << "3: Eliminar productos" <<std::endl;
-        std::cout << "4: Consultar productos" <<std::endl;
-        std::cout << "0: Volver al menu principal" <<std::endl;
-        std::cin >>option;
+        std::cout << "\nMenu Producto" << std::endl;
+        std::cout << "1. Agregar nuevos productos" << std::endl;
+        std::cout << "2. Modificar productos existentes" << std::endl;
+        std::cout << "3. Eliminar productos" << std::endl;
+        std::cout << "4. Consultar productos" << std::endl;
+        std::cout << "0. Volver al menu principal" << std::endl;
+        std::cin >> option;
+
+        Producto nuevoProducto(0, "Nombre", "Categoria", 0.0, 0); // Declaración del objeto
 
         switch (option) {
-            case 1: Producto nuevoProducto(0, "Nombre", "Categoria", 0.0, 0);
-            nuevoProducto.agregarProducto(); // Llama al método
-            break;
+            case 1:
+                nuevoProducto.agregarProducto(); // Llama al método
             break;
             case 2: // Llamar al método modificarProducto
                 if (!productos.empty()) {
@@ -129,11 +130,13 @@ void menuProducto() {
                 }
             break;
             case 0:
-                std::cout << "Saliendo..." <<std::endl;
+                std::cout << "Saliendo..." << std::endl;
+            break;
+            default:
+                std::cout << "Opción inválida, inténtelo de nuevo." << std::endl;
             break;
         }
-    }
-    while (option != 0);
+    } while (option != 0);
 }
 void menuPrincipal() {
     int option;
