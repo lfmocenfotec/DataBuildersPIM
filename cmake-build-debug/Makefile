@@ -128,6 +128,54 @@ DataBuildersPIM/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataBuildersPIM.dir\build.make CMakeFiles/DataBuildersPIM.dir/build
 .PHONY : DataBuildersPIM/fast
 
+Categoria.obj: Categoria.cpp.obj
+.PHONY : Categoria.obj
+
+# target to build an object file
+Categoria.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataBuildersPIM.dir\build.make CMakeFiles/DataBuildersPIM.dir/Categoria.cpp.obj
+.PHONY : Categoria.cpp.obj
+
+Categoria.i: Categoria.cpp.i
+.PHONY : Categoria.i
+
+# target to preprocess a source file
+Categoria.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataBuildersPIM.dir\build.make CMakeFiles/DataBuildersPIM.dir/Categoria.cpp.i
+.PHONY : Categoria.cpp.i
+
+Categoria.s: Categoria.cpp.s
+.PHONY : Categoria.s
+
+# target to generate assembly for a file
+Categoria.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataBuildersPIM.dir\build.make CMakeFiles/DataBuildersPIM.dir/Categoria.cpp.s
+.PHONY : Categoria.cpp.s
+
+Producto.obj: Producto.cpp.obj
+.PHONY : Producto.obj
+
+# target to build an object file
+Producto.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataBuildersPIM.dir\build.make CMakeFiles/DataBuildersPIM.dir/Producto.cpp.obj
+.PHONY : Producto.cpp.obj
+
+Producto.i: Producto.cpp.i
+.PHONY : Producto.i
+
+# target to preprocess a source file
+Producto.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataBuildersPIM.dir\build.make CMakeFiles/DataBuildersPIM.dir/Producto.cpp.i
+.PHONY : Producto.cpp.i
+
+Producto.s: Producto.cpp.s
+.PHONY : Producto.s
+
+# target to generate assembly for a file
+Producto.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataBuildersPIM.dir\build.make CMakeFiles/DataBuildersPIM.dir/Producto.cpp.s
+.PHONY : Producto.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -161,6 +209,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... DataBuildersPIM
+	@echo ... Categoria.obj
+	@echo ... Categoria.i
+	@echo ... Categoria.s
+	@echo ... Producto.obj
+	@echo ... Producto.i
+	@echo ... Producto.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
