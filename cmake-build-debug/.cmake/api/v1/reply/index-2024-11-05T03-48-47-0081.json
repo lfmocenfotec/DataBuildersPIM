@@ -44,11 +44,7 @@
 			}
 		},
 		{
-<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/index-2024-10-17T05-38-43-0281.json
-			"jsonFile" : "cmakeFiles-v1-864a2ffc5224f0f3aa29.json",
-========
-			"jsonFile" : "cmakeFiles-v1-4e064b291b9cafdd6399.json",
->>>>>>>> origin/Laura:cmake-build-debug/.cmake/api/v1/reply/index-2024-10-29T03-20-42-0021.json
+			"jsonFile" : "cmakeFiles-v1-8631e6d1e44721a5c22d.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -80,11 +76,7 @@
 		},
 		"cmakeFiles-v1" : 
 		{
-<<<<<<<< HEAD:cmake-build-debug/.cmake/api/v1/reply/index-2024-10-17T05-38-43-0281.json
-			"jsonFile" : "cmakeFiles-v1-864a2ffc5224f0f3aa29.json",
-========
-			"jsonFile" : "cmakeFiles-v1-4e064b291b9cafdd6399.json",
->>>>>>>> origin/Laura:cmake-build-debug/.cmake/api/v1/reply/index-2024-10-29T03-20-42-0021.json
+			"jsonFile" : "cmakeFiles-v1-8631e6d1e44721a5c22d.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{

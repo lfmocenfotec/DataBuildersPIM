@@ -53,12 +53,7 @@ void menuBusqueda() {
         }
     } while (option != 0);
 }
-<<<<<<< HEAD
-// Guillermo Alfaro C.
-=======
 
-
->>>>>>> origin/Laura
 void mensajeSalida() {
     cout << "Saliendo del programae..." << endl;
 

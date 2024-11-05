@@ -1,10 +1,8 @@
-<<<<<<< HEAD
-//
+
 // Created by XSF on 10/16/2024.
 //
 // //Laura Fernanda Monge
-=======
->>>>>>> origin/Laura
+
 #include "Categoria.h"
 #include <iostream>
 

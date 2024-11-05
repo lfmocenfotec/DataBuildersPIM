@@ -146,4 +146,4 @@ CMakeFiles/DataBuildersPIM.dir/Producto.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_heap.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
- C:\Users\XSF\Documents\CENFOTEC\Proyecto\ de\ Ing\ del\ Software\ 1\DataBuildersPIM\Categoria.h
+ C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\Categoria.h
