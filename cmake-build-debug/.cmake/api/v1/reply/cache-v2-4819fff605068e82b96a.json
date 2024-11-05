@@ -643,7 +643,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/DataBuilders"
+			"value" : "C:/Program Files (x86)/DataBuildersPIM"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -1283,42 +1283,6 @@
 		},
 		{
 			"name" : "DataBuildersPIM_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/jocel/OneDrive/Documentos/DataBuildersPIM"
-		},
-		{
-			"name" : "DataBuilders_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/jocel/OneDrive/Documentos/DataBuildersPIM/cmake-build-debug"
-		},
-		{
-			"name" : "DataBuilders_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "DataBuilders_SOURCE_DIR",
 			"properties" : 
 			[
 				{

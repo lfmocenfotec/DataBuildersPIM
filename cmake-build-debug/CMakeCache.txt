@@ -110,7 +110,7 @@ CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=C:/Users/jocel/OneDrive/Documentos/DataB
 CMAKE_GNUtoMS:BOOL=OFF
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/DataBuilders
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/DataBuildersPIM
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/Program Files/JetBrains/CLion 2024.2.1/bin/mingw/bin/ld.exe
@@ -247,15 +247,6 @@ DataBuildersPIM_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 DataBuildersPIM_SOURCE_DIR:STATIC=C:/Users/jocel/OneDrive/Documentos/DataBuildersPIM
-
-//Value Computed by CMake
-DataBuilders_BINARY_DIR:STATIC=C:/Users/jocel/OneDrive/Documentos/DataBuildersPIM/cmake-build-debug
-
-//Value Computed by CMake
-DataBuilders_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-DataBuilders_SOURCE_DIR:STATIC=C:/Users/jocel/OneDrive/Documentos/DataBuildersPIM
 
 
 ########################
