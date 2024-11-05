@@ -136,8 +136,7 @@ CMakeFiles/DataBuildersPIM.dir/Categoria.cpp.obj: C:/Users/jocel/OneDrive/Docume
   C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
-  C:/Users/XSF/Documents/CENFOTEC/Proyecto\ de\ Ing\ del\ Software\ 1/DataBuildersPIM/Categoria.cpp \
-  C:/Users/XSF/Documents/CENFOTEC/Proyecto\ de\ Ing\ del\ Software\ 1/DataBuildersPIM/Categoria.h
+  C:/Users/jocel/OneDrive/Documentos/DataBuildersPIM/Categoria.h
 
 CMakeFiles/DataBuildersPIM.dir/Producto.cpp.obj: C:/Users/jocel/OneDrive/Documentos/DataBuildersPIM/Producto.cpp \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/binders.h \
@@ -274,8 +273,7 @@ CMakeFiles/DataBuildersPIM.dir/Producto.cpp.obj: C:/Users/jocel/OneDrive/Documen
   C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
-  C:/Users/XSF/Documents/CENFOTEC/Proyecto\ de\ Ing\ del\ Software\ 1/DataBuildersPIM/Producto.cpp \
-  C:/Users/XSF/Documents/CENFOTEC/Proyecto\ de\ Ing\ del\ Software\ 1/DataBuildersPIM/Producto.h
+  C:/Users/jocel/OneDrive/Documentos/DataBuildersPIM/Producto.h
 
 CMakeFiles/DataBuildersPIM.dir/main.cpp.obj: C:/Users/jocel/OneDrive/Documentos/DataBuildersPIM/main.cpp \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/binders.h \
@@ -418,9 +416,8 @@ CMakeFiles/DataBuildersPIM.dir/main.cpp.obj: C:/Users/jocel/OneDrive/Documentos/
   C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
-  C:/Users/XSF/Documents/CENFOTEC/Proyecto\ de\ Ing\ del\ Software\ 1/DataBuildersPIM/Categoria.h \
-  C:/Users/XSF/Documents/CENFOTEC/Proyecto\ de\ Ing\ del\ Software\ 1/DataBuildersPIM/Producto.h \
-  C:/Users/XSF/Documents/CENFOTEC/Proyecto\ de\ Ing\ del\ Software\ 1/DataBuildersPIM/main.cpp
+  C:/Users/jocel/OneDrive/Documentos/DataBuildersPIM/Categoria.h \
+  C:/Users/jocel/OneDrive/Documentos/DataBuildersPIM/Producto.h
 
 
 C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/debug.h:
@@ -617,8 +614,6 @@ C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32
 
 C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h:
 
-C:/Users/XSF/Documents/CENFOTEC/Proyecto\ de\ Ing\ del\ Software\ 1/DataBuildersPIM/Categoria.cpp:
-
 C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include/ctype.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h:
@@ -699,13 +694,11 @@ C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include
 
 C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include/wchar.h:
 
-C:/Users/XSF/Documents/CENFOTEC/Proyecto\ de\ Ing\ del\ Software\ 1/DataBuildersPIM/Categoria.h:
+C:/Users/jocel/OneDrive/Documentos/DataBuildersPIM/Categoria.h:
 
 C:/Users/jocel/OneDrive/Documentos/DataBuildersPIM/Producto.cpp:
 
-C:/Users/XSF/Documents/CENFOTEC/Proyecto\ de\ Ing\ del\ Software\ 1/DataBuildersPIM/Producto.cpp:
-
-C:/Users/XSF/Documents/CENFOTEC/Proyecto\ de\ Ing\ del\ Software\ 1/DataBuildersPIM/Producto.h:
+C:/Users/jocel/OneDrive/Documentos/DataBuildersPIM/Producto.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h:
 
@@ -716,5 +709,3 @@ C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32
 C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector:
-
-C:/Users/XSF/Documents/CENFOTEC/Proyecto\ de\ Ing\ del\ Software\ 1/DataBuildersPIM/main.cpp:
