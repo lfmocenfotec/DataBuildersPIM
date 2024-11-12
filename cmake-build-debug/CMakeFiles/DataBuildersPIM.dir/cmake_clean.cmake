@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/DataBuildersPIM.dir/Categoria.cpp.obj"
   "CMakeFiles/DataBuildersPIM.dir/Categoria.cpp.obj.d"
+  "CMakeFiles/DataBuildersPIM.dir/ConnectionSQL.cpp.obj"
+  "CMakeFiles/DataBuildersPIM.dir/ConnectionSQL.cpp.obj.d"
   "CMakeFiles/DataBuildersPIM.dir/Producto.cpp.obj"
   "CMakeFiles/DataBuildersPIM.dir/Producto.cpp.obj.d"
   "CMakeFiles/DataBuildersPIM.dir/main.cpp.obj"
