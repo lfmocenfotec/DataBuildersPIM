@@ -10,7 +10,6 @@ add_executable(DataBuildersPIM
         Categoria.h
         Producto.cpp
         Producto.h
-        ConnectionSQL.cpp
 
 )
 

@@ -152,30 +152,6 @@ Categoria.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataBuildersPIM.dir\build.make CMakeFiles/DataBuildersPIM.dir/Categoria.cpp.s
 .PHONY : Categoria.cpp.s
 
-ConnectionSQL.obj: ConnectionSQL.cpp.obj
-.PHONY : ConnectionSQL.obj
-
-# target to build an object file
-ConnectionSQL.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataBuildersPIM.dir\build.make CMakeFiles/DataBuildersPIM.dir/ConnectionSQL.cpp.obj
-.PHONY : ConnectionSQL.cpp.obj
-
-ConnectionSQL.i: ConnectionSQL.cpp.i
-.PHONY : ConnectionSQL.i
-
-# target to preprocess a source file
-ConnectionSQL.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataBuildersPIM.dir\build.make CMakeFiles/DataBuildersPIM.dir/ConnectionSQL.cpp.i
-.PHONY : ConnectionSQL.cpp.i
-
-ConnectionSQL.s: ConnectionSQL.cpp.s
-.PHONY : ConnectionSQL.s
-
-# target to generate assembly for a file
-ConnectionSQL.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataBuildersPIM.dir\build.make CMakeFiles/DataBuildersPIM.dir/ConnectionSQL.cpp.s
-.PHONY : ConnectionSQL.cpp.s
-
 Producto.obj: Producto.cpp.obj
 .PHONY : Producto.obj
 
@@ -236,9 +212,6 @@ help:
 	@echo ... Categoria.obj
 	@echo ... Categoria.i
 	@echo ... Categoria.s
-	@echo ... ConnectionSQL.obj
-	@echo ... ConnectionSQL.i
-	@echo ... ConnectionSQL.s
 	@echo ... Producto.obj
 	@echo ... Producto.i
 	@echo ... Producto.s
