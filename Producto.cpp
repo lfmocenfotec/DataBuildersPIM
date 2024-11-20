@@ -10,12 +10,12 @@
 std::vector<Producto> Producto::productos;
 
 // Constructor
-Producto::Producto(int id, const std::string &nombre, const std::string &categoria, double precio, int cantidad)
-    : id(id), nombre(nombre), categoria(categoria), precio(precio), cantidad(cantidad) {}
+Producto::Producto(int idProducto, const std::string &nombre, const std::string &categoria, double precio, int cantidad)
+    : idProducto(idProducto), nombre(nombre), categoria(categoria), precio(precio), cantidad(cantidad) {}
 
 // Método para mostrar los detalles del producto
 void Producto::mostrarDetalles() const {
-    std::cout << "ID: " << id << "\n"
+    std::cout << "ID: " << idProducto << "\n"
               << "Nombre: " << nombre << "\n"
               << "Categoría: " << categoria << "\n"
               << "Precio: " << precio << "\n"
@@ -23,12 +23,12 @@ void Producto::mostrarDetalles() const {
 }
 
 // Método para agregar un producto
-void Producto::agregarProducto(int id, const std::string& nombre, const std::string& categoria, double precio, int cantidad) {
+void Producto::agregarProducto(int idProducto, const std::string& nombre, const std::string& categoria, double precio, int cantidad) {
     if (!Categoria::existeCategoria(categoria)) {
         std::cout << "La categoría '" << categoria << "' no existe. Agregue la categoría antes de agregar el producto." << std::endl;
         return;
     }
-    productos.emplace_back(id, nombre, categoria, precio, cantidad);
+    productos.emplace_back(idProducto, nombre, categoria, precio, cantidad);
     std::cout << "Producto agregado: " <<std::endl;
     std::cout << "Nombre: " << nombre << std::endl;
     std::cout << "Categoria: " << categoria << std::endl;
@@ -38,9 +38,9 @@ void Producto::agregarProducto(int id, const std::string& nombre, const std::str
 
 
 // Método para modificar un producto
-void Producto::modificarProducto(int id, const std::string &nuevoNombre, const std::string &nuevaCategoria, double nuevoPrecio, int nuevaCantidad) {
-    auto it = std::find_if(productos.begin(), productos.end(), [id](const Producto& producto) {
-        return producto.id == id;
+void Producto::modificarProducto(int idProducto, const std::string &nuevoNombre, const std::string &nuevaCategoria, double nuevoPrecio, int nuevaCantidad) {
+    auto it = std::find_if(productos.begin(), productos.end(), [idProducto](const Producto& producto) {
+        return producto.idProducto == idProducto;
     });
 
     if (it != productos.end()) {
@@ -48,43 +48,43 @@ void Producto::modificarProducto(int id, const std::string &nuevoNombre, const s
         it->setCategoria(nuevaCategoria);
         it->setPrecio(nuevoPrecio);
         it->setCantidad(nuevaCantidad);
-        std::cout << "Producto con ID " << id << " modificado." << std::endl;
+        std::cout << "Producto con ID " << idProducto << " modificado." << std::endl;
     } else {
-        std::cout << "Producto con ID " << id << " no encontrado." << std::endl;
+        std::cout << "Producto con ID " << idProducto << " no encontrado." << std::endl;
     }
 }
 
 // Método para eliminar un producto
-void Producto::eliminarProducto(int id) {
-    auto it = std::remove_if(productos.begin(), productos.end(), [id](const Producto& producto) {
-        return producto.id == id;
+void Producto::eliminarProducto(int idProducto) {
+    auto it = std::remove_if(productos.begin(), productos.end(), [idProducto](const Producto& producto) {
+        return producto.idProducto == idProducto;
     });
 
     if (it != productos.end()) {
         productos.erase(it, productos.end());
-        std::cout << "Producto con ID " << id << " eliminado." << std::endl;
+        std::cout << "Producto con ID " << idProducto << " eliminado." << std::endl;
     } else {
-        std::cout << "Producto con ID " << id << " no encontrado." << std::endl;
+        std::cout << "Producto con ID " << idProducto << " no encontrado." << std::endl;
     }
 }
 
 // Método para consultar un producto
-void Producto::consultarProducto(int id) {
-    auto it = std::find_if(productos.begin(), productos.end(), [id](const Producto& producto) {
-        return producto.id == id;
+void Producto::consultarProducto(int idProducto) {
+    auto it = std::find_if(productos.begin(), productos.end(), [idProducto](const Producto& producto) {
+        return producto.idProducto == idProducto;
     });
 
     if (it != productos.end()) {
-        std::cout << "Detalles del producto con ID " << id << ":" << std::endl;
+        std::cout << "Detalles del producto con ID " << idProducto << ":" << std::endl;
         it->mostrarDetalles();
     } else {
-        std::cout << "Producto con ID " << id << " no encontrado." << std::endl;
+        std::cout << "Producto con ID " << idProducto << " no encontrado." << std::endl;
     }
 }
 
 // Getters y Setters
-int Producto::getId() const { return id; }
-void Producto::setId(int id) { this->id = id; }
+int Producto::getId() const { return idProducto; }
+void Producto::setId(int idProducto) { this->idProducto = idProducto; }
 
 std::string Producto::getNombre() const { return nombre; }
 void Producto::setNombre(const std::string &nombre) { this->nombre = nombre; }

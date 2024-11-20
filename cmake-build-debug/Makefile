@@ -152,6 +152,30 @@ Categoria.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataBuildersPIM.dir\build.make CMakeFiles/DataBuildersPIM.dir/Categoria.cpp.s
 .PHONY : Categoria.cpp.s
 
+ConnectionDB.obj: ConnectionDB.cpp.obj
+.PHONY : ConnectionDB.obj
+
+# target to build an object file
+ConnectionDB.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataBuildersPIM.dir\build.make CMakeFiles/DataBuildersPIM.dir/ConnectionDB.cpp.obj
+.PHONY : ConnectionDB.cpp.obj
+
+ConnectionDB.i: ConnectionDB.cpp.i
+.PHONY : ConnectionDB.i
+
+# target to preprocess a source file
+ConnectionDB.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataBuildersPIM.dir\build.make CMakeFiles/DataBuildersPIM.dir/ConnectionDB.cpp.i
+.PHONY : ConnectionDB.cpp.i
+
+ConnectionDB.s: ConnectionDB.cpp.s
+.PHONY : ConnectionDB.s
+
+# target to generate assembly for a file
+ConnectionDB.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataBuildersPIM.dir\build.make CMakeFiles/DataBuildersPIM.dir/ConnectionDB.cpp.s
+.PHONY : ConnectionDB.cpp.s
+
 Producto.obj: Producto.cpp.obj
 .PHONY : Producto.obj
 
@@ -200,6 +224,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataBuildersPIM.dir\build.make CMakeFiles/DataBuildersPIM.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+sqlite/sqlite3.obj: sqlite/sqlite3.c.obj
+.PHONY : sqlite/sqlite3.obj
+
+# target to build an object file
+sqlite/sqlite3.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataBuildersPIM.dir\build.make CMakeFiles/DataBuildersPIM.dir/sqlite/sqlite3.c.obj
+.PHONY : sqlite/sqlite3.c.obj
+
+sqlite/sqlite3.i: sqlite/sqlite3.c.i
+.PHONY : sqlite/sqlite3.i
+
+# target to preprocess a source file
+sqlite/sqlite3.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataBuildersPIM.dir\build.make CMakeFiles/DataBuildersPIM.dir/sqlite/sqlite3.c.i
+.PHONY : sqlite/sqlite3.c.i
+
+sqlite/sqlite3.s: sqlite/sqlite3.c.s
+.PHONY : sqlite/sqlite3.s
+
+# target to generate assembly for a file
+sqlite/sqlite3.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataBuildersPIM.dir\build.make CMakeFiles/DataBuildersPIM.dir/sqlite/sqlite3.c.s
+.PHONY : sqlite/sqlite3.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -212,12 +260,18 @@ help:
 	@echo ... Categoria.obj
 	@echo ... Categoria.i
 	@echo ... Categoria.s
+	@echo ... ConnectionDB.obj
+	@echo ... ConnectionDB.i
+	@echo ... ConnectionDB.s
 	@echo ... Producto.obj
 	@echo ... Producto.i
 	@echo ... Producto.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... sqlite/sqlite3.obj
+	@echo ... sqlite/sqlite3.i
+	@echo ... sqlite/sqlite3.s
 .PHONY : help
 
 
