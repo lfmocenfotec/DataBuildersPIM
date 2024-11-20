@@ -277,9 +277,10 @@ void menuPrincipal() {
 
 
 int main() {
-    menuPrincipal();
+
     if (initBD() == 0) {
         cerr << "Base de datos configurada correctamente." << endl;
+        menuPrincipal();
         return -1;
 
     }
