@@ -10,6 +10,10 @@ add_executable(DataBuildersPIM
         Categoria.h
         Producto.cpp
         Producto.h
+        sqlite/sqlite3.h
+        sqlite/sqlite3.c
+        ConnectionDB.cpp
+        ConnectionDB.h
 
 )
 

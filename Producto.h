@@ -12,7 +12,7 @@
 
 class Producto {
 private:
-    int id;
+    int idProducto;
     std::string nombre;
     std::string categoria;
     double precio;
@@ -23,20 +23,20 @@ private:
 
 public:
     // Constructor
-    Producto(int id, const std::string& nombre, const std::string& categoria, double precio, int cantidad);
+    Producto(int idProducto, const std::string& nombre, const std::string& categoria, double precio, int cantidad);
 
     // Método para mostrar los detalles del producto
     void mostrarDetalles() const;
 
     // Métodos para gestionar productos
-    static void agregarProducto(int id, const std::string &nombre, const std::string &categoria, double precio, int cantidad);
-    static void modificarProducto(int id, const std::string &nuevoNombre, const std::string &nuevaCategoria, double nuevoPrecio, int nuevaCantidad);
-    static void eliminarProducto(int id);
-    static void consultarProducto(int id);
+    static void agregarProducto(int idProducto, const std::string &nombre, const std::string &categoria, double precio, int cantidad);
+    static void modificarProducto(int idProducto, const std::string &nuevoNombre, const std::string &nuevaCategoria, double nuevoPrecio, int nuevaCantidad);
+    static void eliminarProducto(int idProducto);
+    static void consultarProducto(int idProducto);
 
     // Getters y Setters
     int getId() const;
-    void setId(int id);
+    void setId(int idProducto);
 
     std::string getNombre() const;
     void setNombre(const std::string& nombre);

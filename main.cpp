@@ -3,6 +3,8 @@
 #include <limits>
 
 #include "Categoria.h"
+#include "sqlite/sqlite3.h"
+#include "ConnectionDB.h"
 
 using namespace std;
 #include "Producto.h"
@@ -261,7 +263,18 @@ void menuPrincipal() {
         }
     }
 }
+
+
 int main() {
     menuPrincipal();
+    if (initBD() == 0) {
+        cerr << "Base de datos configurada correctamente." << endl;
+        return -1;
+
+    }
+
+    cout << "Hubo un problema al inicializar la base de datos." << endl;
+
     return 0;
+
 }
