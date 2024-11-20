@@ -4,19 +4,21 @@
 
 #include "Categoria.h"
 
-using namespace std;
-#include "Producto.h"
-#include <vector>
-
-#include "sqlite/sqlite3.h"
-#include "ConnectionDB.h"
 
 #include <iostream>
 #include <string>
+#include <limits>
+
+#include "Categoria.h"
+#include "sqlite/sqlite3.h"
+#include "ConnectionDB.h"
+
+using namespace std;
+#include "Producto.h"
+#include <vector>
+#include <iostream>
+#include <string>
 std::vector<Producto> productos; // Vector para almacenar productos
-
-//Douglas Manases
-
 std::vector<Categoria> categorias; // Vector para almacenar categorias
 
 using namespace std;
@@ -272,49 +274,17 @@ void menuPrincipal() {
     }
 }
 
-static int callback(void *data, int argc, char **argv, char **azColName){
-    int i;
-    fprintf(stderr, "%s: ", (const char*)data);
 
-    for(i = 0; i<argc; i++){
-        printf("%s = %s\n", azColName[i], argv[i] ? argv[i] : "NULL");
-    }
 
-    printf("\n");
-    return 0;
-}
-int main(int argc, char* argv[]) {
+int main() {
     menuPrincipal();
-    return 0;
+    if (initBD() == 0) {
+        cerr << "Base de datos configurada correctamente." << endl;
+        return -1;
 
-    sqlite3 *db;
-    char *zErrMsg = 0;
-    int rc;
-    char *sql;
-    const char* data = "Callback function called";
-
-    /* Open database */
-    rc = sqlite3_open("test.db", &db);
-
-    if( rc ) {
-        fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
-        return(0);
-    } else {
-        fprintf(stderr, "Opened database successfully\n");
     }
 
-    /* Create SQL statement */
-    sql = "SELECT * from COMPANY";
+    cout << "Hubo un problema al inicializar la base de datos." << endl;
 
-    /* Execute SQL statement */
-    rc = sqlite3_exec(db, sql, callback, (void*)data, &zErrMsg);
-
-    if( rc != SQLITE_OK ) {
-        fprintf(stderr, "SQL error: %s\n", zErrMsg);
-        sqlite3_free(zErrMsg);
-    } else {
-        fprintf(stdout, "Operation done successfully\n");
-    }
-    sqlite3_close(db);
     return 0;
 }

@@ -1,0 +1,117 @@
+diff a/main.cpp b/main.cpp	(rejected hunks)
+@@ -166,104 +166,115 @@
+                 std::cout << "Ingrese categoría del producto: "<< std::endl;
+                 std::cin>> categoria;
+                 std::cout << "Ingrese precio del producto: "<< std::endl;
+                 std::cin >> precio;
+                 std::cout << "Ingrese cantidad del producto: "<< std::endl;
+                 std::cin >> cantidad;
+ 
+                 Producto::agregarProducto(id, nombre, categoria, precio, cantidad);
+                 break;
+             }
+             case 2: { // Modificar producto
+                 int id;
+                 std::string nuevoNombre, nuevaCategoria;
+                 double nuevoPrecio;
+                 int nuevaCantidad;
+ 
+                 std::cout << "Ingrese ID del producto a modificar: "<< std::endl;
+                 std::cin >> id;
+                 std::cout << "Ingrese nuevo nombre: "<< std::endl;
+                 std::cin >> nuevoNombre;
+                 std::cout << "Ingrese nueva categoría: "<< std::endl;
+                 std::cin >> nuevaCategoria;
+                 std::cout << "Ingrese nuevo precio: "<< std::endl;
+                 std::cin >> nuevoPrecio;
+                 std::cout << "Ingrese nueva cantidad: "<< std::endl;
+                 std::cin >> nuevaCantidad;
+ 
+                 Producto::modificarProducto(id, nuevoNombre, nuevaCategoria, nuevoPrecio, nuevaCantidad);
+                 break;
+             }
+             case 3: { // Eliminar producto
+                 int id;
+                 std::cout << "Ingrese ID del producto a eliminar: "<< std::endl;
+                 std::cin >> id;
+                 Producto::eliminarProducto(id);
+                 break;
+             }
+             case 4: { // Consultar producto
+                 int id;
+                 std::cout << "Ingrese ID del producto a consultar: "<< std::endl;
+                 std::cin >> id;
+                 Producto::consultarProducto(id);
+                 break;
+             }
+             case 0:
+                 std::cout << "Volviendo al menú principal..." << std::endl;
+                 break;
+             default:
+                 std::cout << "Opción inválida, inténtelo de nuevo." << std::endl;
+                 break;
+         }
+     } while (option != 0);
+ }
+ void menuPrincipal() {
+     int option;
+     bool exit = false;
+ 
+     while (!exit) {
+         try {
+             cout << "\n===========================================" << endl;
+             cout << "Administrador de información de productos" << endl;
+             cout << "==========================================" << endl;
+             cout << "1. Administrar productos" << endl;
+             cout << "2. Administrar categorias" << endl;
+             cout << "3. Buscar y filtrar productos" << endl;
+             cout << "4. Salir" << endl;
+             cout << "=========================================" << endl;
+             cout << "\nSeleccione una opcion: "<<endl;
+             cin >> option;
+ 
+             if (cin.fail()) {
+                 cin.clear();
+                 cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                 throw invalid_argument("Entrada inválida. Por favor, ingrese un número.");
+             }
+ 
+             switch (option) {
+                 case 1:
+                     menuProducto();
+                 break;
+                 case 2:
+                     menuCategoria();
+                 break;
+                 case 3:
+                     menuBusqueda();
+                 break;
+                 case 4:
+                     mensajeSalida();
+                 exit = true;
+                 break;
+                 default:
+                     cout << "Opcion invalida, intentelo de nuevo." << endl;
+                 break;
+             }
+         } catch (const exception& e) {
+             cout << "Error: " << e.what() << endl;
+ 
+         }
+     }
+ }
++
++
+ int main() {
+     menuPrincipal();
++    if (initBD() == 0) {
++        cerr << "Base de datos configurada correctamente." << endl;
++        return -1;
++
++    }
++
++    cout << "Hubo un problema al inicializar la base de datos." << endl;
++
+     return 0;
++
+ }
