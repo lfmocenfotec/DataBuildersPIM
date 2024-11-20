@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/DataBuildersPIM.dir/Producto.cpp.obj.d"
   "CMakeFiles/DataBuildersPIM.dir/main.cpp.obj"
   "CMakeFiles/DataBuildersPIM.dir/main.cpp.obj.d"
+  "CMakeFiles/DataBuildersPIM.dir/sqlite/sqlite3.c.obj"
+  "CMakeFiles/DataBuildersPIM.dir/sqlite/sqlite3.c.obj.d"
   "DataBuildersPIM.exe"
   "DataBuildersPIM.exe.manifest"
   "DataBuildersPIM.pdb"
@@ -12,6 +14,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang CXX)
+foreach(lang C CXX)
   include(CMakeFiles/DataBuildersPIM.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

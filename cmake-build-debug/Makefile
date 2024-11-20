@@ -200,6 +200,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataBuildersPIM.dir\build.make CMakeFiles/DataBuildersPIM.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+sqlite/sqlite3.obj: sqlite/sqlite3.c.obj
+.PHONY : sqlite/sqlite3.obj
+
+# target to build an object file
+sqlite/sqlite3.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataBuildersPIM.dir\build.make CMakeFiles/DataBuildersPIM.dir/sqlite/sqlite3.c.obj
+.PHONY : sqlite/sqlite3.c.obj
+
+sqlite/sqlite3.i: sqlite/sqlite3.c.i
+.PHONY : sqlite/sqlite3.i
+
+# target to preprocess a source file
+sqlite/sqlite3.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataBuildersPIM.dir\build.make CMakeFiles/DataBuildersPIM.dir/sqlite/sqlite3.c.i
+.PHONY : sqlite/sqlite3.c.i
+
+sqlite/sqlite3.s: sqlite/sqlite3.c.s
+.PHONY : sqlite/sqlite3.s
+
+# target to generate assembly for a file
+sqlite/sqlite3.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataBuildersPIM.dir\build.make CMakeFiles/DataBuildersPIM.dir/sqlite/sqlite3.c.s
+.PHONY : sqlite/sqlite3.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -218,6 +242,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... sqlite/sqlite3.obj
+	@echo ... sqlite/sqlite3.i
+	@echo ... sqlite/sqlite3.s
 .PHONY : help
 
 
