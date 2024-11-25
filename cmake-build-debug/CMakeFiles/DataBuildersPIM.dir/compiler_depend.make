@@ -140,6 +140,7 @@ CMakeFiles/DataBuildersPIM.dir/Categoria.cpp.obj: C:/Users/HP/Desktop/DataBuilde
   C:/Users/HP/AppData/Local/JetBrains/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
   C:/Users/HP/AppData/Local/JetBrains/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
   C:/Users/HP/Desktop/DataBuildersPIM/Categoria.h \
+  C:/Users/HP/Desktop/DataBuildersPIM/ConnectionDB.h \
   C:/Users/HP/Desktop/DataBuildersPIM/sqlite/sqlite3.h
 
 CMakeFiles/DataBuildersPIM.dir/ConnectionDB.cpp.obj: C:/Users/HP/Desktop/DataBuildersPIM/ConnectionDB.cpp \
@@ -1237,13 +1238,13 @@ C:/Users/HP/AppData/Local/JetBrains/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32
 
 C:/Users/HP/Desktop/DataBuildersPIM/Categoria.h:
 
+C:/Users/HP/Desktop/DataBuildersPIM/ConnectionDB.h:
+
 C:/Users/HP/Desktop/DataBuildersPIM/sqlite/sqlite3.h:
 
 C:/Users/HP/AppData/Local/JetBrains/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include/winsmcrd.h:
 
 C:/Users/HP/Desktop/DataBuildersPIM/Producto.cpp:
-
-C:/Users/HP/Desktop/DataBuildersPIM/ConnectionDB.h:
 
 C:/Users/HP/AppData/Local/JetBrains/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include/virtdisk.h:
 

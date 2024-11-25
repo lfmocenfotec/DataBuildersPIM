@@ -22,6 +22,7 @@ public:
     static bool modificarCategoria(const string& nombreExistente, const string& nuevoNombre);
     static bool eliminarCategoria(const string& nombre);
     static void visualizarCategorias();
+    static void consultaCategoriaNom(const string& nombre);
 
     // Metodo para verificar si una categoría existe
     static bool existeCategoria(const string& nombre);

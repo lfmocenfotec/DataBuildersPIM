@@ -5,6 +5,7 @@
 
 #include "Categoria.h"
 #include "sqlite/sqlite3.h"
+#include "ConnectionDB.h"
 #include <iostream>
 using namespace std;
 
@@ -100,7 +101,54 @@ bool Categoria::modificarCategoria(const string& nombreActual, const string& nue
 }
 
 
+void Categoria::consultaCategoriaNom(const std::string& nombre) {
+    sqlite3* db = obtenerConexion();
+    if (!db) return;
 
+    // Consulta SQL con filtro por nombre (usando LIKE para coincidencia parcial)
+    std::string query = "SELECT ID, NOMBRE FROM CATEGORIA WHERE NOMBRE LIKE ?";
+    sqlite3_stmt* stmt;
+
+    // Preparar la consulta
+    if (sqlite3_prepare_v2(db, query.c_str(), -1, &stmt, nullptr) != SQLITE_OK) {
+        std::cerr << "Error al preparar la consulta: " << sqlite3_errmsg(db) << std::endl;
+        sqlite3_close(db);
+        return;
+    }
+
+    // Bind del parámetro (busca coincidencias parciales)
+    std::string likePattern = "%" + nombre + "%";
+    if (sqlite3_bind_text(stmt, 1, likePattern.c_str(), -1, SQLITE_TRANSIENT) != SQLITE_OK) {
+        std::cerr << "Error al asignar el parámetro: " << sqlite3_errmsg(db) << std::endl;
+        sqlite3_finalize(stmt);
+        sqlite3_close(db);
+        return;
+    }
+
+    // Ejecutar la consulta y mostrar los resultados
+    bool hayResultados = false;
+    std::cout << "Resultados de la búsqueda para \"" << nombre << "\":" << std::endl;
+
+    while (sqlite3_step(stmt) == SQLITE_ROW) {
+        hayResultados = true;
+        int id = sqlite3_column_int(stmt, 0);
+        const char* nombre = (const char*)sqlite3_column_text(stmt, 1);
+        const char* descripcion = (const char*)sqlite3_column_text(stmt, 2);
+
+        std::cout << "ID: " << id << "\n"
+                  << "Nombre: " << nombre << "\n"
+                  << "Descripción: " << descripcion << "\n"
+                  << "-------------------------------" << std::endl;
+    }
+
+    if (!hayResultados) {
+        std::cout << "No se encontraron categorías que coincidan con \"" << nombre << "\"." << std::endl;
+    }
+
+    // Finalizar el statement y cerrar la conexión
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+}
 
 
 

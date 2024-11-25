@@ -27,6 +27,8 @@ public:
     static void modificarProducto(int idProducto, const string &nuevoNombre, const string &nuevaCategoria, double nuevoPrecio, int nuevaCantidad);
     static void eliminarProducto(int idProducto);
     static void consultarProducto(int idProducto);
+    static void consultarProductoNom(const string& nombre);
+
     static void listarProductos();
 
     // Getters y Setters

@@ -29,7 +29,7 @@ void menuBusqueda() {
         std::cout << "Menú de búsqueda y filtrado " << std::endl;
         std::cout << "===========================================" << std::endl;
         std::cout << "1. Buscar producto por nombre." << std::endl;
-        std::cout << "2. Filtrar producto por nombre" << std::endl;
+        std::cout << "2. Buscar Categoria por nombre" << std::endl;
         std::cout << "0. Volver al menu principal" << std::endl;
         std::cout << "=========================================" << std::endl;
         std::cout << "\nSeleccione una opción: "<<std::endl;
@@ -41,12 +41,19 @@ void menuBusqueda() {
             cout << "Entrada inválida. Inténtelo de nuevo." << endl;
             continue;
         }
+        std::string nombre;
 
         switch (option) {
             case 1:
+                cout << "Ingrese el nombre del producto: ";
+            cin >> nombre;
+            Producto::consultarProductoNom(nombre);
             break;
 
             case 2:
+                cout << "Ingrese el nombre de la categoria: ";
+            cin >> nombre;
+            Categoria::consultaCategoriaNom(nombre);
             break;
 
             case 0:
