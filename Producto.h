@@ -7,42 +7,37 @@
 
 #include <string>
 #include <iostream>
-#include <vector>
-#include <algorithm>
+using namespace std;
 
 class Producto {
 private:
     int idProducto;
-    std::string nombre;
-    std::string categoria;
+    string nombre;
+    string categoria;
     double precio;
     int cantidad;
 
-    // Lista estática de productos
-    static std::vector<Producto> productos;
-
 public:
     // Constructor
-    Producto(int idProducto, const std::string& nombre, const std::string& categoria, double precio, int cantidad);
+    Producto(int idProducto, const string& nombre, const string& categoria, double precio, int cantidad);
 
-    // Método para mostrar los detalles del producto
-    void mostrarDetalles() const;
 
     // Métodos para gestionar productos
-    static void agregarProducto(int idProducto, const std::string &nombre, const std::string &categoria, double precio, int cantidad);
-    static void modificarProducto(int idProducto, const std::string &nuevoNombre, const std::string &nuevaCategoria, double nuevoPrecio, int nuevaCantidad);
+    static void agregarProducto(int idProducto, const string &nombre, const string &categoria, double precio, int cantidad);
+    static void modificarProducto(int idProducto, const string &nuevoNombre, const string &nuevaCategoria, double nuevoPrecio, int nuevaCantidad);
     static void eliminarProducto(int idProducto);
     static void consultarProducto(int idProducto);
+    static void listarProductos();
 
     // Getters y Setters
     int getId() const;
     void setId(int idProducto);
 
-    std::string getNombre() const;
-    void setNombre(const std::string& nombre);
+    string getNombre() const;
+    void setNombre(const string& nombre);
 
-    std::string getCategoria() const;
-    void setCategoria(const std::string& categoria);
+    string getCategoria() const;
+    void setCategoria(const string& categoria);
 
     double getPrecio() const;
     void setPrecio(double precio);

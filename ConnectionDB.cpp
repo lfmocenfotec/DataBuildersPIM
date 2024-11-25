@@ -63,6 +63,14 @@ int initBD() {
     return 0;
 }
 
-
+sqlite3* obtenerConexion() {
+    sqlite3* db;
+    // Intentamos abrir la base de datos
+    if (sqlite3_open("PIM.db", &db)) {
+        std::cerr << "No se pudo abrir la base de datos: " << sqlite3_errmsg(db) << std::endl;
+        return nullptr;  // Si no se puede abrir, retornamos un puntero nulo
+    }
+    return db;  // Si se pudo abrir correctamente, retornamos el puntero de conexión
+}
 
 

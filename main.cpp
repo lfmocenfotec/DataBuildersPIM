@@ -15,11 +15,9 @@
 
 using namespace std;
 #include "Producto.h"
-#include <vector>
 #include <iostream>
 #include <string>
-std::vector<Producto> productos; // Vector para almacenar productos
-std::vector<Categoria> categorias; // Vector para almacenar categorias
+
 
 using namespace std;
 
@@ -142,17 +140,18 @@ void menuProducto() {
     int option;
 
     do {
-        std::cout << "\n===========================================" << std::endl;
-        std::cout << "Menu Producto" << std::endl;
-        std::cout << "===========================================" << std::endl;
-        std::cout << "1. Agregar nuevos productos" << std::endl;
-        std::cout << "2. Modificar productos existentes" << std::endl;
-        std::cout << "3. Eliminar productos" << std::endl;
-        std::cout << "4. Consultar productos" << std::endl;
-        std::cout << "0. Volver al menu principal" << std::endl;
-        std::cout << "=========================================" << std::endl;
-        std::cout << "\nSeleccione una opción: "<<std::endl;
-        std::cin >> option;
+        cout << "\n===========================================" << endl;
+        cout << "Menu Producto" << endl;
+        cout << "===========================================" << endl;
+        cout << "1. Agregar nuevos productos" << endl;
+        cout << "2. Modificar productos existentes" << endl;
+        cout << "3. Eliminar productos" << std::endl;
+        cout << "4. Listar todos los productos" << endl;
+        cout << "5. Consultar producto por id" << endl;
+        cout << "0. Volver al menu principal" << endl;
+        cout << "=========================================" << endl;
+        cout << "\nSeleccione una opción: "<<endl;
+        cin >> option;
 
         if (cin.fail()) {
             cin.clear();
@@ -164,7 +163,7 @@ void menuProducto() {
         switch (option) {
             case 1: { // Agregar producto
                 int id, cantidad;
-                std::string nombre, categoria;
+                string nombre, categoria;
                 double precio;
 
                 std::cout << "Ingrese ID del producto: "<< std::endl;
@@ -209,6 +208,10 @@ void menuProducto() {
                 break;
             }
             case 4: { // Consultar producto
+                Producto::listarProductos();
+                break;
+            }
+            case 5: { // Consultar producto
                 int id;
                 std::cout << "Ingrese ID del producto a consultar: "<< std::endl;
                 std::cin >> id;
@@ -279,8 +282,8 @@ void menuPrincipal() {
 int main() {
 
     if (initBD() == 0) {
-        cerr << "Base de datos configurada correctamente." << endl;
         menuPrincipal();
+        cerr << "Base de datos configurada correctamente." << endl;
         return -1;
 
     }

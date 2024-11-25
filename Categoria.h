@@ -7,28 +7,28 @@
 #ifndef CATEGORIA_H
 #define CATEGORIA_H
 #include <string>
-#include <vector>
+
+using namespace std;
 
 class Categoria {
 private:
-    std::string nombre;
-    static std::vector<Categoria> categorias; // Lista de todas las categorías
+    string nombre;
 
 public:
-    Categoria(const std::string& nombre);
+    Categoria(const string& nombre);
 
-    // Métodos de gestión
-    static void agregarCategoria(const std::string& nombre);
-    static void modificarCategoria(const std::string& nombreExistente, const std::string& nuevoNombre);
-    static void eliminarCategoria(const std::string& nombre);
+    // Metodos de gestión
+    static void agregarCategoria(const string& nombre);
+    static bool modificarCategoria(const string& nombreExistente, const string& nuevoNombre);
+    static bool eliminarCategoria(const string& nombre);
     static void visualizarCategorias();
 
-    // Método para verificar si una categoría existe
-    static bool existeCategoria(const std::string& nombre);
+    // Metodo para verificar si una categoría existe
+    static bool existeCategoria(const string& nombre);
 
     // Getters y Setters
     std::string getNombre() const;
-    void setNombre(const std::string& nombre);
+    void setNombre(const string& nombre);
 };
 
 #endif //CATEGORIA_H
