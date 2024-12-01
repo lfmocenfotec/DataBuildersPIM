@@ -298,4 +298,11 @@ int main() {
     cout << "Hubo un problema al inicializar la base de datos." << endl;
 
     return 0;
+<<<<<<< HEAD
 }
+=======
+
+}
+
+//Hola XD
+>>>>>>> c08d131c5f8981dc60473c069ef965cbac98aecc
