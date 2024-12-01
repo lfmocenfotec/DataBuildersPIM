@@ -30,6 +30,8 @@ public:
     static void consultarProductoNom(const string& nombre);
 
     static void listarProductos();
+    static void filtrarPorCategoria(const string& categoria);
+    static void filtrarPorPrecio(double minPrecio, double maxPrecio);
 
     // Getters y Setters
     int getId() const;

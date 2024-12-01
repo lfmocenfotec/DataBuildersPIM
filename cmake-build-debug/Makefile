@@ -56,10 +56,17 @@ RM = "C:\Program Files\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\cmake-build-debug
+=======
+CMAKE_SOURCE_DIR = "C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM"
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = "C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM\cmake-build-debug"
+>>>>>>> origin/Laura
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +93,15 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\cmake-build-debug\CMakeFiles C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\cmake-build-debug\CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM\cmake-build-debug\CMakeFiles" "C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM\cmake-build-debug\\CMakeFiles\progress.marks"
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM\cmake-build-debug\CMakeFiles" 0
+>>>>>>> origin/Laura
 .PHONY : all
 
 # The main clean target

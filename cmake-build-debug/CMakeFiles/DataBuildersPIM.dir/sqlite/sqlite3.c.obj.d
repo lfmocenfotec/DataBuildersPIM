@@ -1,5 +1,9 @@
 CMakeFiles/DataBuildersPIM.dir/sqlite/sqlite3.c.obj: \
+<<<<<<< HEAD
  C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\sqlite\sqlite3.c \
+=======
+ C:\Users\XSF\Documents\CENFOTEC\Proyecto\ de\ Ing\ del\ Software\ 1\DataBuildersPIM\sqlite\sqlite3.c \
+>>>>>>> origin/Laura
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdarg.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include/stdarg.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.1/bin/mingw/x86_64-w64-mingw32/include/_mingw_stdarg.h \
