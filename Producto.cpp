@@ -207,7 +207,74 @@ void Producto::listarProductos() {
 }
 
 
+// Filtrar productos por categoría
+void Producto::filtrarPorCategoria(const string& categoria) {
+    sqlite3* db = obtenerConexion();
+    if (!db) return;
 
+    string query = "SELECT IDPRODUCTO, NOMBRE, PRECIO, CANTIDAD FROM PRODUCTO WHERE CATEGORIA = ?";
+    sqlite3_stmt* stmt;
+
+    if (sqlite3_prepare_v2(db, query.c_str(), -1, &stmt, nullptr) != SQLITE_OK) {
+        cerr << "Error al preparar la consulta: " << sqlite3_errmsg(db) << endl;
+        sqlite3_close(db);
+        return;
+    }
+
+    sqlite3_bind_text(stmt, 1, categoria.c_str(), -1, SQLITE_STATIC);
+
+    while (sqlite3_step(stmt) == SQLITE_ROW) {
+        int id = sqlite3_column_int(stmt, 0);
+        const char* nombre = (const char*)sqlite3_column_text(stmt, 1);
+        double precio = sqlite3_column_double(stmt, 2);
+        int cantidad = sqlite3_column_int(stmt, 3);
+
+        cout << "ID: " << id << "\n"
+             << "Nombre: " << nombre << "\n"
+             << "Precio: " << precio << "\n"
+             << "Cantidad: " << cantidad << "\n"
+             << "-------------------------------" << endl;
+    }
+
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+}
+
+// Filtrar productos por precio
+void Producto::filtrarPorPrecio(double minPrecio, double maxPrecio) {
+    sqlite3* db = obtenerConexion();
+    if (!db) return;
+
+    string query = "SELECT IDPRODUCTO, NOMBRE, CATEGORIA, PRECIO, CANTIDAD FROM PRODUCTO WHERE PRECIO >= ? AND PRECIO <= ?";
+    sqlite3_stmt* stmt;
+
+    if (sqlite3_prepare_v2(db, query.c_str(), -1, &stmt, nullptr) != SQLITE_OK) {
+        cerr << "Error al preparar la consulta: " << sqlite3_errmsg(db) << endl;
+        sqlite3_close(db);
+        return;
+    }
+
+    sqlite3_bind_double(stmt, 1, minPrecio);
+    sqlite3_bind_double(stmt, 2, maxPrecio);
+
+    while (sqlite3_step(stmt) == SQLITE_ROW) {
+        int id = sqlite3_column_int(stmt, 0);
+        const char* nombre = (const char*)sqlite3_column_text(stmt, 1);
+        const char* categoria = (const char*)sqlite3_column_text(stmt, 2);
+        double precio = sqlite3_column_double(stmt, 3);
+        int cantidad = sqlite3_column_int(stmt, 4);
+
+        cout << "ID: " << id << "\n"
+             << "Nombre: " << nombre << "\n"
+             << "Categoría: " << categoria << "\n"
+             << "Precio: " << precio << "\n"
+             << "Cantidad: " << cantidad << "\n"
+             << "-------------------------------" << endl;
+    }
+
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+}
 
 
 
@@ -260,6 +327,7 @@ void Producto::consultarProductoNom(const string& nombre) {
     if (!hayResultados) {
         std::cout << "No se encontraron productos que coincidan con \"" << nombre << "\"." << std::endl;
     }
+
 
     // Finalizar el statement y cerrar la conexión
     sqlite3_finalize(stmt);

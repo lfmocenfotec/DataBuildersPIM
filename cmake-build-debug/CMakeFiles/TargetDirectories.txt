@@ -1,3 +1,3 @@
-C:/Users/HP/Desktop/DataBuildersPIM/cmake-build-debug/CMakeFiles/DataBuildersPIM.dir
-C:/Users/HP/Desktop/DataBuildersPIM/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/HP/Desktop/DataBuildersPIM/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/XSF/Documents/CENFOTEC/Proyecto de Ing del Software 1/DataBuildersPIM/cmake-build-debug/CMakeFiles/DataBuildersPIM.dir
+C:/Users/XSF/Documents/CENFOTEC/Proyecto de Ing del Software 1/DataBuildersPIM/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/XSF/Documents/CENFOTEC/Proyecto de Ing del Software 1/DataBuildersPIM/cmake-build-debug/CMakeFiles/rebuild_cache.dir

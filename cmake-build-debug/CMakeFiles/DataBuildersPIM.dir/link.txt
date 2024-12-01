@@ -1,3 +1,3 @@
-"C:\Users\HP\AppData\Local\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\DataBuildersPIM.dir/objects.a
-C:\Users\HP\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\ar.exe qc CMakeFiles\DataBuildersPIM.dir/objects.a @CMakeFiles\DataBuildersPIM.dir\objects1.rsp
-C:\Users\HP\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\DataBuildersPIM.dir/objects.a -Wl,--no-whole-archive -o DataBuildersPIM.exe -Wl,--out-implib,libDataBuildersPIM.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\DataBuildersPIM.dir\linkLibs.rsp
+"C:\Program Files\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\DataBuildersPIM.dir/objects.a
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\ar.exe qc CMakeFiles\DataBuildersPIM.dir/objects.a @CMakeFiles\DataBuildersPIM.dir\objects1.rsp
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\DataBuildersPIM.dir/objects.a -Wl,--no-whole-archive -o DataBuildersPIM.exe -Wl,--out-implib,libDataBuildersPIM.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\DataBuildersPIM.dir\linkLibs.rsp

@@ -15,8 +15,7 @@
 
 using namespace std;
 #include "Producto.h"
-#include <iostream>
-#include <string>
+
 
 
 using namespace std;
@@ -30,6 +29,8 @@ void menuBusqueda() {
         std::cout << "===========================================" << std::endl;
         std::cout << "1. Buscar producto por nombre." << std::endl;
         std::cout << "2. Buscar Categoria por nombre" << std::endl;
+        std::cout << "3. Buscar producto por categoria." << std::endl;
+        std::cout << "4. Buscar producto por precio." << std::endl;
         std::cout << "0. Volver al menu principal" << std::endl;
         std::cout << "=========================================" << std::endl;
         std::cout << "\nSeleccione una opción: "<<std::endl;
@@ -54,6 +55,22 @@ void menuBusqueda() {
                 cout << "Ingrese el nombre de la categoria: ";
             cin >> nombre;
             Categoria::consultaCategoriaNom(nombre);
+            break;
+
+            case 3:
+                cout << "Ingrese el nombre de la catergoria: ";
+                cin >> nombre;
+                Producto::filtrarPorCategoria(nombre);
+            break;
+
+            case 4:
+                double preciomin;
+                double preciomax;
+                cout << "Ingrese el precio minimo: ";
+                cin >> preciomin;
+                cout << "Ingrese el precio maximo: ";
+                cin >> preciomax;
+            Producto::filtrarPorPrecio(preciomin, preciomax);
             break;
 
             case 0:
