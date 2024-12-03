@@ -19,15 +19,17 @@ private:
 
 public:
     // Constructor
-    Producto(int idProducto, const string& nombre, const string& categoria, double precio, int cantidad);
+    Producto( const string& nombre, const string& categoria, double precio, int cantidad);
 
 
     // Métodos para gestionar productos
-    static void agregarProducto(int idProducto, const string &nombre, const string &categoria, double precio, int cantidad);
+    static void agregarProducto( const string &nombre, const string &categoria, double precio, int cantidad);
     static void modificarProducto(int idProducto, const string &nuevoNombre, const string &nuevaCategoria, double nuevoPrecio, int nuevaCantidad);
     static void eliminarProducto(int idProducto);
     static void consultarProducto(int idProducto);
     static void consultarProductoNom(const string& nombre);
+    static void agregarDetalles(int idProducto, const std::string& detalles);
+    static void verDetalles(int idProducto);
 
     static void listarProductos();
     static void filtrarPorCategoria(const string& categoria);

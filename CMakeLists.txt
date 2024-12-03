@@ -14,10 +14,6 @@ add_executable(DataBuildersPIM
         sqlite/sqlite3.c
         ConnectionDB.cpp
         ConnectionDB.h
-
-
-
-
 )
 
 # Establecer que se trata de una aplicación de consola

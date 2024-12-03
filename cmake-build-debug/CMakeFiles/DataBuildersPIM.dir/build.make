@@ -43,26 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Users\HP\AppData\Local\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = "C:\Users\HP\AppData\Local\JetBrains\CLion 2024.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-<<<<<<< HEAD
-CMAKE_SOURCE_DIR = C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM
+CMAKE_SOURCE_DIR = C:\Users\HP\Desktop\DataBuildersPIM
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\cmake-build-debug
-=======
-CMAKE_SOURCE_DIR = "C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM"
-
-# The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM\cmake-build-debug"
->>>>>>> origin/Laura
+CMAKE_BINARY_DIR = C:\Users\HP\Desktop\DataBuildersPIM\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/DataBuildersPIM.dir/depend.make
@@ -76,145 +69,74 @@ include CMakeFiles/DataBuildersPIM.dir/progress.make
 include CMakeFiles/DataBuildersPIM.dir/flags.make
 
 CMakeFiles/DataBuildersPIM.dir/main.cpp.obj: CMakeFiles/DataBuildersPIM.dir/flags.make
-<<<<<<< HEAD
-CMakeFiles/DataBuildersPIM.dir/main.cpp.obj: C:/Users/jocel/OneDrive/Documentos/DataBuildersPIM/main.cpp
+CMakeFiles/DataBuildersPIM.dir/main.cpp.obj: C:/Users/HP/Desktop/DataBuildersPIM/main.cpp
 CMakeFiles/DataBuildersPIM.dir/main.cpp.obj: CMakeFiles/DataBuildersPIM.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DataBuildersPIM.dir/main.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataBuildersPIM.dir/main.cpp.obj -MF CMakeFiles\DataBuildersPIM.dir\main.cpp.obj.d -o CMakeFiles\DataBuildersPIM.dir\main.cpp.obj -c C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Desktop\DataBuildersPIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DataBuildersPIM.dir/main.cpp.obj"
+	C:\Users\HP\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataBuildersPIM.dir/main.cpp.obj -MF CMakeFiles\DataBuildersPIM.dir\main.cpp.obj.d -o CMakeFiles\DataBuildersPIM.dir\main.cpp.obj -c C:\Users\HP\Desktop\DataBuildersPIM\main.cpp
 
 CMakeFiles/DataBuildersPIM.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DataBuildersPIM.dir/main.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\main.cpp > CMakeFiles\DataBuildersPIM.dir\main.cpp.i
+	C:\Users\HP\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Desktop\DataBuildersPIM\main.cpp > CMakeFiles\DataBuildersPIM.dir\main.cpp.i
 
 CMakeFiles/DataBuildersPIM.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DataBuildersPIM.dir/main.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\main.cpp -o CMakeFiles\DataBuildersPIM.dir\main.cpp.s
+	C:\Users\HP\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Desktop\DataBuildersPIM\main.cpp -o CMakeFiles\DataBuildersPIM.dir\main.cpp.s
 
 CMakeFiles/DataBuildersPIM.dir/Categoria.cpp.obj: CMakeFiles/DataBuildersPIM.dir/flags.make
-CMakeFiles/DataBuildersPIM.dir/Categoria.cpp.obj: C:/Users/jocel/OneDrive/Documentos/DataBuildersPIM/Categoria.cpp
+CMakeFiles/DataBuildersPIM.dir/Categoria.cpp.obj: C:/Users/HP/Desktop/DataBuildersPIM/Categoria.cpp
 CMakeFiles/DataBuildersPIM.dir/Categoria.cpp.obj: CMakeFiles/DataBuildersPIM.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DataBuildersPIM.dir/Categoria.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataBuildersPIM.dir/Categoria.cpp.obj -MF CMakeFiles\DataBuildersPIM.dir\Categoria.cpp.obj.d -o CMakeFiles\DataBuildersPIM.dir\Categoria.cpp.obj -c C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\Categoria.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Desktop\DataBuildersPIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DataBuildersPIM.dir/Categoria.cpp.obj"
+	C:\Users\HP\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataBuildersPIM.dir/Categoria.cpp.obj -MF CMakeFiles\DataBuildersPIM.dir\Categoria.cpp.obj.d -o CMakeFiles\DataBuildersPIM.dir\Categoria.cpp.obj -c C:\Users\HP\Desktop\DataBuildersPIM\Categoria.cpp
 
 CMakeFiles/DataBuildersPIM.dir/Categoria.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DataBuildersPIM.dir/Categoria.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\Categoria.cpp > CMakeFiles\DataBuildersPIM.dir\Categoria.cpp.i
+	C:\Users\HP\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Desktop\DataBuildersPIM\Categoria.cpp > CMakeFiles\DataBuildersPIM.dir\Categoria.cpp.i
 
 CMakeFiles/DataBuildersPIM.dir/Categoria.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DataBuildersPIM.dir/Categoria.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\Categoria.cpp -o CMakeFiles\DataBuildersPIM.dir\Categoria.cpp.s
+	C:\Users\HP\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Desktop\DataBuildersPIM\Categoria.cpp -o CMakeFiles\DataBuildersPIM.dir\Categoria.cpp.s
 
 CMakeFiles/DataBuildersPIM.dir/Producto.cpp.obj: CMakeFiles/DataBuildersPIM.dir/flags.make
-CMakeFiles/DataBuildersPIM.dir/Producto.cpp.obj: C:/Users/jocel/OneDrive/Documentos/DataBuildersPIM/Producto.cpp
+CMakeFiles/DataBuildersPIM.dir/Producto.cpp.obj: C:/Users/HP/Desktop/DataBuildersPIM/Producto.cpp
 CMakeFiles/DataBuildersPIM.dir/Producto.cpp.obj: CMakeFiles/DataBuildersPIM.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DataBuildersPIM.dir/Producto.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataBuildersPIM.dir/Producto.cpp.obj -MF CMakeFiles\DataBuildersPIM.dir\Producto.cpp.obj.d -o CMakeFiles\DataBuildersPIM.dir\Producto.cpp.obj -c C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\Producto.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Desktop\DataBuildersPIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DataBuildersPIM.dir/Producto.cpp.obj"
+	C:\Users\HP\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataBuildersPIM.dir/Producto.cpp.obj -MF CMakeFiles\DataBuildersPIM.dir\Producto.cpp.obj.d -o CMakeFiles\DataBuildersPIM.dir\Producto.cpp.obj -c C:\Users\HP\Desktop\DataBuildersPIM\Producto.cpp
 
 CMakeFiles/DataBuildersPIM.dir/Producto.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DataBuildersPIM.dir/Producto.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\Producto.cpp > CMakeFiles\DataBuildersPIM.dir\Producto.cpp.i
+	C:\Users\HP\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Desktop\DataBuildersPIM\Producto.cpp > CMakeFiles\DataBuildersPIM.dir\Producto.cpp.i
 
 CMakeFiles/DataBuildersPIM.dir/Producto.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DataBuildersPIM.dir/Producto.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\Producto.cpp -o CMakeFiles\DataBuildersPIM.dir\Producto.cpp.s
+	C:\Users\HP\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Desktop\DataBuildersPIM\Producto.cpp -o CMakeFiles\DataBuildersPIM.dir\Producto.cpp.s
 
 CMakeFiles/DataBuildersPIM.dir/sqlite/sqlite3.c.obj: CMakeFiles/DataBuildersPIM.dir/flags.make
-CMakeFiles/DataBuildersPIM.dir/sqlite/sqlite3.c.obj: C:/Users/jocel/OneDrive/Documentos/DataBuildersPIM/sqlite/sqlite3.c
+CMakeFiles/DataBuildersPIM.dir/sqlite/sqlite3.c.obj: C:/Users/HP/Desktop/DataBuildersPIM/sqlite/sqlite3.c
 CMakeFiles/DataBuildersPIM.dir/sqlite/sqlite3.c.obj: CMakeFiles/DataBuildersPIM.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/DataBuildersPIM.dir/sqlite/sqlite3.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DataBuildersPIM.dir/sqlite/sqlite3.c.obj -MF CMakeFiles\DataBuildersPIM.dir\sqlite\sqlite3.c.obj.d -o CMakeFiles\DataBuildersPIM.dir\sqlite\sqlite3.c.obj -c C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\sqlite\sqlite3.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Desktop\DataBuildersPIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/DataBuildersPIM.dir/sqlite/sqlite3.c.obj"
+	C:\Users\HP\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DataBuildersPIM.dir/sqlite/sqlite3.c.obj -MF CMakeFiles\DataBuildersPIM.dir\sqlite\sqlite3.c.obj.d -o CMakeFiles\DataBuildersPIM.dir\sqlite\sqlite3.c.obj -c C:\Users\HP\Desktop\DataBuildersPIM\sqlite\sqlite3.c
 
 CMakeFiles/DataBuildersPIM.dir/sqlite/sqlite3.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/DataBuildersPIM.dir/sqlite/sqlite3.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\sqlite\sqlite3.c > CMakeFiles\DataBuildersPIM.dir\sqlite\sqlite3.c.i
+	C:\Users\HP\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\HP\Desktop\DataBuildersPIM\sqlite\sqlite3.c > CMakeFiles\DataBuildersPIM.dir\sqlite\sqlite3.c.i
 
 CMakeFiles/DataBuildersPIM.dir/sqlite/sqlite3.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/DataBuildersPIM.dir/sqlite/sqlite3.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\sqlite\sqlite3.c -o CMakeFiles\DataBuildersPIM.dir\sqlite\sqlite3.c.s
+	C:\Users\HP\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\HP\Desktop\DataBuildersPIM\sqlite\sqlite3.c -o CMakeFiles\DataBuildersPIM.dir\sqlite\sqlite3.c.s
 
 CMakeFiles/DataBuildersPIM.dir/ConnectionDB.cpp.obj: CMakeFiles/DataBuildersPIM.dir/flags.make
-CMakeFiles/DataBuildersPIM.dir/ConnectionDB.cpp.obj: C:/Users/jocel/OneDrive/Documentos/DataBuildersPIM/ConnectionDB.cpp
+CMakeFiles/DataBuildersPIM.dir/ConnectionDB.cpp.obj: C:/Users/HP/Desktop/DataBuildersPIM/ConnectionDB.cpp
 CMakeFiles/DataBuildersPIM.dir/ConnectionDB.cpp.obj: CMakeFiles/DataBuildersPIM.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DataBuildersPIM.dir/ConnectionDB.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataBuildersPIM.dir/ConnectionDB.cpp.obj -MF CMakeFiles\DataBuildersPIM.dir\ConnectionDB.cpp.obj.d -o CMakeFiles\DataBuildersPIM.dir\ConnectionDB.cpp.obj -c C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\ConnectionDB.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Desktop\DataBuildersPIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DataBuildersPIM.dir/ConnectionDB.cpp.obj"
+	C:\Users\HP\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataBuildersPIM.dir/ConnectionDB.cpp.obj -MF CMakeFiles\DataBuildersPIM.dir\ConnectionDB.cpp.obj.d -o CMakeFiles\DataBuildersPIM.dir\ConnectionDB.cpp.obj -c C:\Users\HP\Desktop\DataBuildersPIM\ConnectionDB.cpp
 
 CMakeFiles/DataBuildersPIM.dir/ConnectionDB.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DataBuildersPIM.dir/ConnectionDB.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\ConnectionDB.cpp > CMakeFiles\DataBuildersPIM.dir\ConnectionDB.cpp.i
+	C:\Users\HP\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Desktop\DataBuildersPIM\ConnectionDB.cpp > CMakeFiles\DataBuildersPIM.dir\ConnectionDB.cpp.i
 
 CMakeFiles/DataBuildersPIM.dir/ConnectionDB.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DataBuildersPIM.dir/ConnectionDB.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\ConnectionDB.cpp -o CMakeFiles\DataBuildersPIM.dir\ConnectionDB.cpp.s
-=======
-CMakeFiles/DataBuildersPIM.dir/main.cpp.obj: C:/Users/XSF/Documents/CENFOTEC/Proyecto\ de\ Ing\ del\ Software\ 1/DataBuildersPIM/main.cpp
-CMakeFiles/DataBuildersPIM.dir/main.cpp.obj: CMakeFiles/DataBuildersPIM.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DataBuildersPIM.dir/main.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataBuildersPIM.dir/main.cpp.obj -MF CMakeFiles\DataBuildersPIM.dir\main.cpp.obj.d -o CMakeFiles\DataBuildersPIM.dir\main.cpp.obj -c "C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM\main.cpp"
-
-CMakeFiles/DataBuildersPIM.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DataBuildersPIM.dir/main.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM\main.cpp" > CMakeFiles\DataBuildersPIM.dir\main.cpp.i
-
-CMakeFiles/DataBuildersPIM.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DataBuildersPIM.dir/main.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM\main.cpp" -o CMakeFiles\DataBuildersPIM.dir\main.cpp.s
-
-CMakeFiles/DataBuildersPIM.dir/Categoria.cpp.obj: CMakeFiles/DataBuildersPIM.dir/flags.make
-CMakeFiles/DataBuildersPIM.dir/Categoria.cpp.obj: C:/Users/XSF/Documents/CENFOTEC/Proyecto\ de\ Ing\ del\ Software\ 1/DataBuildersPIM/Categoria.cpp
-CMakeFiles/DataBuildersPIM.dir/Categoria.cpp.obj: CMakeFiles/DataBuildersPIM.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DataBuildersPIM.dir/Categoria.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataBuildersPIM.dir/Categoria.cpp.obj -MF CMakeFiles\DataBuildersPIM.dir\Categoria.cpp.obj.d -o CMakeFiles\DataBuildersPIM.dir\Categoria.cpp.obj -c "C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM\Categoria.cpp"
-
-CMakeFiles/DataBuildersPIM.dir/Categoria.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DataBuildersPIM.dir/Categoria.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM\Categoria.cpp" > CMakeFiles\DataBuildersPIM.dir\Categoria.cpp.i
-
-CMakeFiles/DataBuildersPIM.dir/Categoria.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DataBuildersPIM.dir/Categoria.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM\Categoria.cpp" -o CMakeFiles\DataBuildersPIM.dir\Categoria.cpp.s
-
-CMakeFiles/DataBuildersPIM.dir/Producto.cpp.obj: CMakeFiles/DataBuildersPIM.dir/flags.make
-CMakeFiles/DataBuildersPIM.dir/Producto.cpp.obj: C:/Users/XSF/Documents/CENFOTEC/Proyecto\ de\ Ing\ del\ Software\ 1/DataBuildersPIM/Producto.cpp
-CMakeFiles/DataBuildersPIM.dir/Producto.cpp.obj: CMakeFiles/DataBuildersPIM.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DataBuildersPIM.dir/Producto.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataBuildersPIM.dir/Producto.cpp.obj -MF CMakeFiles\DataBuildersPIM.dir\Producto.cpp.obj.d -o CMakeFiles\DataBuildersPIM.dir\Producto.cpp.obj -c "C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM\Producto.cpp"
-
-CMakeFiles/DataBuildersPIM.dir/Producto.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DataBuildersPIM.dir/Producto.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM\Producto.cpp" > CMakeFiles\DataBuildersPIM.dir\Producto.cpp.i
-
-CMakeFiles/DataBuildersPIM.dir/Producto.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DataBuildersPIM.dir/Producto.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM\Producto.cpp" -o CMakeFiles\DataBuildersPIM.dir\Producto.cpp.s
-
-CMakeFiles/DataBuildersPIM.dir/sqlite/sqlite3.c.obj: CMakeFiles/DataBuildersPIM.dir/flags.make
-CMakeFiles/DataBuildersPIM.dir/sqlite/sqlite3.c.obj: C:/Users/XSF/Documents/CENFOTEC/Proyecto\ de\ Ing\ del\ Software\ 1/DataBuildersPIM/sqlite/sqlite3.c
-CMakeFiles/DataBuildersPIM.dir/sqlite/sqlite3.c.obj: CMakeFiles/DataBuildersPIM.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/DataBuildersPIM.dir/sqlite/sqlite3.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/DataBuildersPIM.dir/sqlite/sqlite3.c.obj -MF CMakeFiles\DataBuildersPIM.dir\sqlite\sqlite3.c.obj.d -o CMakeFiles\DataBuildersPIM.dir\sqlite\sqlite3.c.obj -c "C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM\sqlite\sqlite3.c"
-
-CMakeFiles/DataBuildersPIM.dir/sqlite/sqlite3.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/DataBuildersPIM.dir/sqlite/sqlite3.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM\sqlite\sqlite3.c" > CMakeFiles\DataBuildersPIM.dir\sqlite\sqlite3.c.i
-
-CMakeFiles/DataBuildersPIM.dir/sqlite/sqlite3.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/DataBuildersPIM.dir/sqlite/sqlite3.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM\sqlite\sqlite3.c" -o CMakeFiles\DataBuildersPIM.dir\sqlite\sqlite3.c.s
-
-CMakeFiles/DataBuildersPIM.dir/ConnectionDB.cpp.obj: CMakeFiles/DataBuildersPIM.dir/flags.make
-CMakeFiles/DataBuildersPIM.dir/ConnectionDB.cpp.obj: C:/Users/XSF/Documents/CENFOTEC/Proyecto\ de\ Ing\ del\ Software\ 1/DataBuildersPIM/ConnectionDB.cpp
-CMakeFiles/DataBuildersPIM.dir/ConnectionDB.cpp.obj: CMakeFiles/DataBuildersPIM.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DataBuildersPIM.dir/ConnectionDB.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DataBuildersPIM.dir/ConnectionDB.cpp.obj -MF CMakeFiles\DataBuildersPIM.dir\ConnectionDB.cpp.obj.d -o CMakeFiles\DataBuildersPIM.dir\ConnectionDB.cpp.obj -c "C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM\ConnectionDB.cpp"
-
-CMakeFiles/DataBuildersPIM.dir/ConnectionDB.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DataBuildersPIM.dir/ConnectionDB.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM\ConnectionDB.cpp" > CMakeFiles\DataBuildersPIM.dir\ConnectionDB.cpp.i
-
-CMakeFiles/DataBuildersPIM.dir/ConnectionDB.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DataBuildersPIM.dir/ConnectionDB.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM\ConnectionDB.cpp" -o CMakeFiles\DataBuildersPIM.dir\ConnectionDB.cpp.s
->>>>>>> origin/Laura
+	C:\Users\HP\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Desktop\DataBuildersPIM\ConnectionDB.cpp -o CMakeFiles\DataBuildersPIM.dir\ConnectionDB.cpp.s
 
 # Object files for target DataBuildersPIM
 DataBuildersPIM_OBJECTS = \
@@ -236,11 +158,7 @@ DataBuildersPIM.exe: CMakeFiles/DataBuildersPIM.dir/build.make
 DataBuildersPIM.exe: CMakeFiles/DataBuildersPIM.dir/linkLibs.rsp
 DataBuildersPIM.exe: CMakeFiles/DataBuildersPIM.dir/objects1.rsp
 DataBuildersPIM.exe: CMakeFiles/DataBuildersPIM.dir/link.txt
-<<<<<<< HEAD
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable DataBuildersPIM.exe"
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable DataBuildersPIM.exe"
->>>>>>> origin/Laura
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\HP\Desktop\DataBuildersPIM\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable DataBuildersPIM.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\DataBuildersPIM.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -252,10 +170,6 @@ CMakeFiles/DataBuildersPIM.dir/clean:
 .PHONY : CMakeFiles/DataBuildersPIM.dir/clean
 
 CMakeFiles/DataBuildersPIM.dir/depend:
-<<<<<<< HEAD
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\cmake-build-debug C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\cmake-build-debug C:\Users\jocel\OneDrive\Documentos\DataBuildersPIM\cmake-build-debug\CMakeFiles\DataBuildersPIM.dir\DependInfo.cmake "--color=$(COLOR)"
-=======
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM" "C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM" "C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM\cmake-build-debug" "C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM\cmake-build-debug" "C:\Users\XSF\Documents\CENFOTEC\Proyecto de Ing del Software 1\DataBuildersPIM\cmake-build-debug\CMakeFiles\DataBuildersPIM.dir\DependInfo.cmake" "--color=$(COLOR)"
->>>>>>> origin/Laura
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\HP\Desktop\DataBuildersPIM C:\Users\HP\Desktop\DataBuildersPIM C:\Users\HP\Desktop\DataBuildersPIM\cmake-build-debug C:\Users\HP\Desktop\DataBuildersPIM\cmake-build-debug C:\Users\HP\Desktop\DataBuildersPIM\cmake-build-debug\CMakeFiles\DataBuildersPIM.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/DataBuildersPIM.dir/depend
 

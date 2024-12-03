@@ -45,7 +45,9 @@ int initBD() {
         "NOMBRE TEXT NOT NULL, "
         "CATEGORIA TEXT NOT NULL, "
         "PRECIO REAL NOT NULL, "
-        "CANTIDAD INT NOT NULL);";
+        "CANTIDAD INT NOT NULL, "
+        "DETALLES TEXT);"; // Campo para agregar los atributos personalizables
+
 
     rc = sqlite3_exec(db, sqlCreateProducto, nullptr, nullptr, &zErrMsg);
     if (rc != SQLITE_OK) {

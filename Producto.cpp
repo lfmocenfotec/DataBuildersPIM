@@ -12,8 +12,8 @@ using namespace std;
 
 
 // Constructor
-Producto::Producto(int idProducto, const string &nombre, const string &categoria, double precio, int cantidad)
-    : idProducto(idProducto), nombre(nombre), categoria(categoria), precio(precio), cantidad(cantidad) {}
+Producto::Producto( const string &nombre, const string &categoria, double precio, int cantidad)
+    : nombre(nombre), categoria(categoria), precio(precio), cantidad(cantidad) {}
 
 
 
@@ -23,11 +23,11 @@ Producto::Producto(int idProducto, const string &nombre, const string &categoria
 
 
 // Metodo para agregar un producto a la base de datos
-void Producto::agregarProducto(int idProducto, const std::string& nombre, const std::string& categoria, double precio, int cantidad) {
+void Producto::agregarProducto( const std::string& nombre, const std::string& categoria, double precio, int cantidad) {
     sqlite3* db = obtenerConexion();
     if (!db) return;
 
-    std::string query = "INSERT INTO PRODUCTO (IDPRODUCTO, NOMBRE, CATEGORIA, PRECIO, CANTIDAD) VALUES (?, ?, ?, ?, ?)";
+    std::string query = "INSERT INTO PRODUCTO (NOMBRE, CATEGORIA, PRECIO, CANTIDAD) VALUES (?, ?, ?, ?)";
     sqlite3_stmt* stmt;
     if (sqlite3_prepare_v2(db, query.c_str(), -1, &stmt, nullptr) != SQLITE_OK) {
         std::cerr << "Error al preparar la consulta: " << sqlite3_errmsg(db) << std::endl;
@@ -35,11 +35,10 @@ void Producto::agregarProducto(int idProducto, const std::string& nombre, const 
         return;
     }
 
-    sqlite3_bind_int(stmt, 1, idProducto);
-    sqlite3_bind_text(stmt, 2, nombre.c_str(), -1, SQLITE_STATIC);
-    sqlite3_bind_text(stmt, 3, categoria.c_str(), -1, SQLITE_STATIC);
-    sqlite3_bind_double(stmt, 4, precio);
-    sqlite3_bind_int(stmt, 5, cantidad);
+    sqlite3_bind_text(stmt, 1, nombre.c_str(), -1, SQLITE_STATIC);
+    sqlite3_bind_text(stmt, 2, categoria.c_str(), -1, SQLITE_STATIC);
+    sqlite3_bind_double(stmt, 3, precio);
+    sqlite3_bind_int(stmt, 4, cantidad);
 
     if (sqlite3_step(stmt) != SQLITE_DONE) {
         std::cerr << "Error al insertar el producto: " << sqlite3_errmsg(db) << std::endl;
@@ -51,6 +50,93 @@ void Producto::agregarProducto(int idProducto, const std::string& nombre, const 
     sqlite3_close(db);
 }
 
+
+
+
+void Producto::agregarDetalles(int idProducto, const std::string& detalles) {
+    // Conexión a la base de datos
+    sqlite3* db;
+    char* errorMessage = nullptr;
+
+    // Preparamos la consulta SQL para actualizar los detalles del producto
+    std::string sql = "UPDATE PRODUCTO SET DETALLES = ? WHERE IDPRODUCTO = ?;";
+
+    // Abrimos la base de datos
+    int rc = sqlite3_open("PIM.db", &db);
+    if (rc) {
+        std::cerr << "No se pudo abrir la base de datos: " << sqlite3_errmsg(db) << std::endl;
+        return;
+    }
+
+    // Preparamos la consulta
+    sqlite3_stmt* stmt;
+    rc = sqlite3_prepare_v2(db, sql.c_str(), -1, &stmt, nullptr);
+    if (rc != SQLITE_OK) {
+        std::cerr << "Error al preparar la consulta: " << sqlite3_errmsg(db) << std::endl;
+        sqlite3_close(db);
+        return;
+    }
+
+    // Bind de los parámetros: el nuevo detalle y el ID del producto
+    sqlite3_bind_text(stmt, 1, detalles.c_str(), -1, SQLITE_STATIC);
+    sqlite3_bind_int(stmt, 2, idProducto);
+
+    // Ejecutar la consulta
+    rc = sqlite3_step(stmt);
+    if (rc != SQLITE_DONE) {
+        std::cerr << "Error al modificar los detalles del producto: " << sqlite3_errmsg(db) << std::endl;
+    } else {
+        std::cout << "Detalles del producto con ID " << idProducto << " modificados correctamente." << std::endl;
+    }
+
+    // Limpiar recursos
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+}
+
+
+
+
+
+void Producto::verDetalles(int idProducto) {
+    sqlite3* db;
+    sqlite3_stmt* stmt;
+    const char* sql = "SELECT DETALLES FROM PRODUCTO WHERE IDPRODUCTO = ?;"; // Consulta SELECT
+
+    // Abrir la base de datos
+    int rc = sqlite3_open("PIM.db", &db);
+    if (rc) {
+        std::cerr << "No se pudo abrir la base de datos: " << sqlite3_errmsg(db) << std::endl;
+        return;
+    }
+
+    // Preparar la consulta SQL
+    rc = sqlite3_prepare_v2(db, sql, -1, &stmt, nullptr);
+    if (rc != SQLITE_OK) {
+        std::cerr << "Error al preparar la consulta: " << sqlite3_errmsg(db) << std::endl;
+        sqlite3_close(db);
+        return;
+    }
+
+    // Vincular el parámetro del ID del producto
+    sqlite3_bind_int(stmt, 1, idProducto);
+
+    // Ejecutar la consulta y obtener los resultados
+    rc = sqlite3_step(stmt);
+    if (rc == SQLITE_ROW) {
+        // Obtener el valor del campo DETALLES
+        const char* detalles = reinterpret_cast<const char*>(sqlite3_column_text(stmt, 0));
+        std::cout << "Detalles del producto con ID " << idProducto << ": " << detalles << std::endl;
+    } else if (rc == SQLITE_DONE) {
+        std::cout << "No se encontraron detalles para el producto con ID " << idProducto << std::endl;
+    } else {
+        std::cerr << "Error al ejecutar la consulta: " << sqlite3_errmsg(db) << std::endl;
+    }
+
+    // Finalizar la sentencia y cerrar la base de datos
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+}
 
 
 
@@ -130,7 +216,7 @@ void Producto::consultarProducto(int idProducto) {
     sqlite3* db = obtenerConexion();
     if (!db) return;
 
-    std::string query = "SELECT IDPRODUCTO, NOMBRE, CATEGORIA, PRECIO, CANTIDAD FROM PRODUCTO WHERE idProducto = ?";
+    std::string query = "SELECT IDPRODUCTO, NOMBRE, CATEGORIA, PRECIO, CANTIDAD, DETALLES FROM PRODUCTO WHERE idProducto = ?";
     sqlite3_stmt* stmt;
     if (sqlite3_prepare_v2(db, query.c_str(), -1, &stmt, nullptr) != SQLITE_OK) {
         std::cerr << "Error al preparar la consulta: " << sqlite3_errmsg(db) << std::endl;

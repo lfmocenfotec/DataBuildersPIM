@@ -1,21 +1,11 @@
 #include <iostream>
 #include <string>
 #include <limits>
-
-#include "Categoria.h"
-
-
-#include <iostream>
-#include <string>
-#include <limits>
-
 #include "Categoria.h"
 #include "sqlite/sqlite3.h"
 #include "ConnectionDB.h"
-
-using namespace std;
 #include "Producto.h"
-
+#include <cstdlib>
 
 
 using namespace std;
@@ -25,7 +15,7 @@ void menuBusqueda() {
 
     do {
         std::cout << "\n===========================================" << std::endl;
-        std::cout << "Menú de búsqueda y filtrado " << std::endl;
+        std::cout << "Menu de busqueda y filtrado " << std::endl;
         std::cout << "===========================================" << std::endl;
         std::cout << "1. Buscar producto por nombre." << std::endl;
         std::cout << "2. Buscar Categoria por nombre" << std::endl;
@@ -33,13 +23,13 @@ void menuBusqueda() {
         std::cout << "4. Buscar producto por precio." << std::endl;
         std::cout << "0. Volver al menu principal" << std::endl;
         std::cout << "=========================================" << std::endl;
-        std::cout << "\nSeleccione una opción: "<<std::endl;
+        std::cout << "\nSeleccione una opcion: "<<std::endl;
         std::cin >> option;
 
         if (cin.fail()) {
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            cout << "Entrada inválida. Inténtelo de nuevo." << endl;
+            cout << "Entrada invalida. Intentelo de nuevo." << endl;
             continue;
         }
         std::string nombre;
@@ -77,7 +67,7 @@ void menuBusqueda() {
                 std::cout << "Saliendo..." << std::endl;
             break;
             default:
-                std::cout << "Opción inválida, inténtelo de nuevo." << std::endl;
+                std::cout << "Opción invalida, inténtelo de nuevo." << std::endl;
             break;
         }
     } while (option != 0);
@@ -96,23 +86,23 @@ void menuCategoria() {
 
     while (!exit) {
         cout << "\n===========================================" << endl;
-        cout << "Categorías:" << endl;
+        cout << "Categorias:" << endl;
         cout << "===========================================" << endl;
-        cout << "1. Crear categoría" << endl;
-        cout << "2. Editar categoría" << endl;
-        cout << "3. Eliminar categoría" << endl;
-        cout << "4. Consultar lista de categorías" << endl;
-        cout << "5. Volver al menú principal" << endl;
+        cout << "1. Crear categoria" << endl;
+        cout << "2. Editar categoria" << endl;
+        cout << "3. Eliminar categoria" << endl;
+        cout << "4. Consultar lista de categorias" << endl;
+        cout << "5. Volver al menu principal" << endl;
         cout << "6. Salir" << endl;
         cout << "=========================================" << endl;
-        cout << "\nSeleccione una opción: "<<endl;
+        cout << "\nSeleccione una opcion: "<<endl;
         cin >> option;
 
             // Verificar entrada inválida
             if (cin.fail()) {
                 cin.clear();
                 cin.ignore(numeric_limits<streamsize>::max(), '\n');
-                cout << "Entrada inválida. Inténtelo de nuevo." << endl;
+                cout << "Entrada invalida. Intentelo de nuevo." << endl;
                 continue;
             }
 
@@ -120,21 +110,21 @@ void menuCategoria() {
 
             switch (option) {
                 case 1: // Agregar categoría
-                    cout << "Ingrese el nombre de la nueva categoría: ";
+                    cout << "Ingrese el nombre de la nueva categoria: ";
                     cin >> nombre;
                     Categoria::agregarCategoria(nombre);
                 break;
 
                 case 2: // Modificar categoría
-                    cout << "Ingrese el nombre de la categoría a modificar: ";
+                    cout << "Ingrese el nombre de la categoria a modificar: ";
                     cin >> nombre;
-                    cout << "Ingrese el nuevo nombre de la categoría: ";
+                    cout << "Ingrese el nuevo nombre de la categoria: ";
                     cin >> nuevoNombre;
                     Categoria::modificarCategoria(nombre, nuevoNombre);
                 break;
 
                 case 3: // Eliminar categoría
-                    cout << "Ingrese el nombre de la categoría a eliminar: ";
+                    cout << "Ingrese el nombre de la categoria a eliminar: ";
                     cin >> nombre;
                     Categoria::eliminarCategoria(nombre);
                 break;
@@ -144,7 +134,7 @@ void menuCategoria() {
                 break;
 
                 case 5: // Volver al menú principal
-                    cout << "Volviendo al menú principal..." << endl;
+                    cout << "Volviendo al menu principal..." << endl;
                     exit = true;
                 break;
 
@@ -154,12 +144,11 @@ void menuCategoria() {
                 break;
 
                 default:
-                    cout << "Opción inválida, inténtelo de nuevo." << endl;
+                    cout << "Opción invalida, intentelo de nuevo." << endl;
                 break;
             }
         }
 }
-//Laura Fernanda Monge
 void menuProducto() {
     int option;
 
@@ -171,37 +160,37 @@ void menuProducto() {
         cout << "2. Modificar productos existentes" << endl;
         cout << "3. Eliminar productos" << std::endl;
         cout << "4. Listar todos los productos" << endl;
-        cout << "5. Consultar producto por id" << endl;
+        cout << "5. Consultar producto por id" << std::endl;
+        cout << "6. Registrar detalles de un producto" << std::endl;
+        cout << "7. Ver detalles de un producto" << std::endl;
         cout << "0. Volver al menu principal" << endl;
         cout << "=========================================" << endl;
-        cout << "\nSeleccione una opción: "<<endl;
+        cout << "\nSeleccione una opcion: "<<endl;
         cin >> option;
 
         if (cin.fail()) {
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            cout << "Entrada inválida. Inténtelo de nuevo." << endl;
+            cout << "Entrada invalida. Intentelo de nuevo." << endl;
             continue;
         }
 
         switch (option) {
             case 1: { // Agregar producto
-                int id, cantidad;
+                int cantidad;
                 string nombre, categoria;
                 double precio;
 
-                std::cout << "Ingrese ID del producto: "<< std::endl;
-                std::cin >> id;
                 std::cout << "Ingrese nombre del producto: "<< std::endl;
                 std::cin>> nombre;
-                std::cout << "Ingrese categoría del producto: "<< std::endl;
+                std::cout << "Ingrese categoria del producto: "<< std::endl;
                 std::cin>> categoria;
                 std::cout << "Ingrese precio del producto: "<< std::endl;
                 std::cin >> precio;
                 std::cout << "Ingrese cantidad del producto: "<< std::endl;
                 std::cin >> cantidad;
 
-                Producto::agregarProducto(id, nombre, categoria, precio, cantidad);
+                Producto::agregarProducto(nombre, categoria, precio, cantidad);
                 break;
             }
             case 2: { // Modificar producto
@@ -242,11 +231,31 @@ void menuProducto() {
                 Producto::consultarProducto(id);
                 break;
             }
+            case 6: { // Registrar detalles de un producto
+                int idProducto;
+                std::string detalles;
+
+                std::cout << "Ingrese el ID del producto: ";
+                std::cin >> idProducto;
+                std::cin.ignore();  // Para limpiar el buffer de entrada
+                std::cout << "Ingrese los detalles del producto: ";
+                std::getline(std::cin, detalles);
+
+                Producto::agregarDetalles(idProducto, detalles);
+                break;
+            }
+            case 7: { // Consultar producto
+                int id;
+                std::cout << "Ingrese ID del producto a consultar detalles: "<< std::endl;
+                std::cin >> id;
+                Producto::verDetalles(id);
+                break;
+            }
             case 0:
                 std::cout << "Volviendo al menú principal..." << std::endl;
                 break;
             default:
-                std::cout << "Opción inválida, inténtelo de nuevo." << std::endl;
+                std::cout << "Opcion inválida, intentelo de nuevo." << std::endl;
                 break;
         }
     } while (option != 0);
@@ -273,7 +282,7 @@ void menuPrincipal() {
             if (cin.fail()) {
                 cin.clear();
                 cin.ignore(numeric_limits<streamsize>::max(), '\n');
-                throw invalid_argument("Entrada inválida. Por favor, ingrese un número.");
+                throw invalid_argument("Entrada invalida. Por favor, ingrese un numero.");
             }
 
             switch (option) {
@@ -305,6 +314,7 @@ void menuPrincipal() {
 
 int main() {
     if (initBD() == 0) {
+
         menuPrincipal();
         cerr << "Base de datos configurada correctamente." << endl;
         return -1;
